@@ -4,7 +4,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
-<title>Contact-02 &#8211; Softek</title>
+<title>Contact-02 &#8211; Quill informatiocs</title>
 <meta name='robots' content='noindex, nofollow' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
@@ -1534,7 +1534,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-ced4112 radiantthemes-retina elementor-widget elementor-widget-radiant-custom-logo" data-id="ced4112" data-element_type="widget" data-widget_type="radiant-custom-logo.default">
 <div class="elementor-widget-container">
-<div class="logo"><a href="https://softek.radiantthemes.com"><span class="logo-default i-am-here-one"><img src="/assets/logo.png" alt="logo" width=auto height="45" data-logoWidth=auto></span><span class="logo-rt-dark"><img src="/assets/logo.png" alt="logo" width=auto height="45" data-logoWidth=auto></span></a></div> </div>
+<div class="logo"><a href="#"><span class="logo-default i-am-here-one"><img src="/assets/logo.png" alt="logo" width=auto height="45" data-logoWidth=auto></span><span class="logo-rt-dark"><img src="/assets/logo.png" alt="logo" width=auto height="45" data-logoWidth=auto></span></a></div> </div>
 </div>
 </div>
 </div>
@@ -1711,7 +1711,8 @@ Contact Us </p>
 <div class="elementor-widget-container">
 <div class="void-cf7-form-widget-wrapper elementor-shortcode void-cf7-0" data-void-cf7-contact-form-id="2435"><div role="form" class="wpcf7" id="wpcf7-f2435-p4540-o1" lang="en-US" dir="ltr">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/contact-02/#wpcf7-f2435-p4540-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<!-- <form action="/contact_info/users" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init"> -->
+ <%= form_with model:@inquiry, url: contact_info_users_path do |form| %> 
 <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="2435" />
 <input type="hidden" name="_wpcf7_version" value="5.5.3" />
@@ -1720,11 +1721,12 @@ Contact Us </p>
 <input type="hidden" name="_wpcf7_container_post" value="4540" />
 <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
 </div>
-<p><span class="wpcf7-form-control-wrap YourName"><input type="text" name="YourName" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name*" /></span><br />
-<span class="wpcf7-form-control-wrap YourEmail"><input type="email" name="YourEmail" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email*" /></span><br />
-<span class="wpcf7-form-control-wrap Message"><textarea name="Message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea></span><br />
-<input type="submit" value="Send Message" class="wpcf7-form-control has-spinner wpcf7-submit" /></p>
+<p><span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name*" /></span><br />
+<span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email*" /></span><br />
+<span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message*"></textarea></span><br />
+<input type="submit"  class="wpcf7-form-control has-spinner wpcf7-submit" /></p>
 <div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div> </div>
+<% end %>
 </div>
 </div>
 </div>
@@ -1892,7 +1894,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting </div>
 <span class="elementor-grid-item">
 <a class="elementor-icon elementor-social-icon elementor-social-icon-ti-facebook elementor-repeater-item-7fec4f0" href="#" target="_blank">
 <span class="elementor-screen-only">Ti-facebook</span>
-<i class="ti ti-facebook"></i> </a>
+<i class="fa-brands fa-facebook"></i> </a>
 </span>
 <span class="elementor-grid-item">
 <a class="elementor-icon elementor-social-icon elementor-social-icon-ti-twitter-alt elementor-repeater-item-cc70354" href="#" target="_blank">
@@ -1922,7 +1924,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting </div>
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-91dc90f elementor-widget elementor-widget-heading" data-id="91dc90f" data-element_type="widget" data-widget_type="heading.default">
 <div class="elementor-widget-container">
-<h6 class="elementor-heading-title elementor-size-default">Quill Info</h6> </div>
+<h6 class="elementor-heading-title elementor-size-default">Quill Informatiocs</h6> </div>
 </div>
 <div class="elementor-element elementor-element-691e141 elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="691e141" data-element_type="widget" data-widget_type="icon-list.default">
 <div class="elementor-widget-container">
@@ -2027,7 +2029,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting </div>
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-8ab5fc7 elementor-widget elementor-widget-heading" data-id="8ab5fc7" data-element_type="widget" data-widget_type="heading.default">
 <div class="elementor-widget-container">
-<div class="elementor-heading-title elementor-size-default">2022 Quill Info. All Rights Reserved.</div> </div>
+<div class="elementor-heading-title elementor-size-default">2022 Quill Informatiocs. All Rights Reserved.</div> </div>
 </div>
 </div>
 </div>
