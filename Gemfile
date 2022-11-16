@@ -77,3 +77,4 @@ end
 
 gem "cssbundling-rails"
 gem "pg", "~> 1.4"
+gem "rails_12factor"
