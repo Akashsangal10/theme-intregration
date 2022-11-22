@@ -21,8 +21,7 @@ class UsersController < ApplicationController
 	def contact_info
 		@inquiry = Inquiry.create(name:params[:name], email:params[:email], message:params[:message])
 		if @inquiry
-			redirect_to contact_users_path, notice: "We will connect soon"
-		
+			redirect_to contact_users_path, notice:"Contact Us form has been successfuly submitted"
 		end
 	end
 
