@@ -22,6 +22,7 @@ class UsersController < ApplicationController
 		@inquiry = Inquiry.create(name:params[:name], email:params[:email], message:params[:message])
 		if @inquiry
 			redirect_to contact_users_path, notice: "We will connect soon"
+		
 		end
 	end
 

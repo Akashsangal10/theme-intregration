@@ -80,5 +80,8 @@ end
 gem "cssbundling-rails"
 gem "pg", "~> 1.4"
 gem "rails_12factor"
-
+gem "devise"
+gem "omniauth"
+gem "omniauth-google-oauth2"
+gem "omniauth-rails_csrf_protection", "~> 1.0"
 
