@@ -360,14 +360,14 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <ul id="menu-inner-pages-menu" class="elementor-nav-menu"><li id="menu-item-52724" class="menu-item menu-item-type-post_type menu-item-object-mega_menu menu-item-52724  rt-dropdown mega-menu-item"><a href="<%= root_path %>" data-description="">Home</a><ul class="rt-dropdown-menu"><li class="mega-menu-content"> <div data-elementor-type="wp-post" data-elementor-id="52720" class="elementor elementor-52720" data-elementor-settings="[]">
 </div>
 </li></ul></li>
-<li id="menu-item-36307" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-36307 rt-dropdown"><a href="#" data-description="">Services</a>
-<ul class="sub-menu rt-dropdown-menu menu-odd  menu-depth-1">
+<li id="menu-item-36307" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-36307 rt-dropdown"><a href="<%= services_path %>" data-description="">Services</a>
+<!-- <ul class="sub-menu rt-dropdown-menu menu-odd  menu-depth-1">
 <li id="menu-item-36651" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36651"><a href="#" data-description="">Web Development</a></li>
 <li id="menu-item-36652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36652"><a href="#" data-description="">Mobile App Development</a></li>
 <li id="menu-item-36653" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36653"><a href="#" data-description="">UI Development</a></li>
 <li id="menu-item-36654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36654"><a href="#" data-description="">User Experience(ux) Design</a></li>
 </li>
-</ul>
+</ul> -->
 </li>
 <li id="menu-item-35220" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-35220 rt-dropdown"><a href="<%= about_user_path %>" data-description="">About</a>
 </li>
@@ -794,28 +794,40 @@ Lorem Ipsum is simply dummy text of the printing and typesetting </div>
 </ul>
 </div>
 </div>
-<div class="elementor-element elementor-element-303103b elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="303103b" data-element_type="widget" data-widget_type="icon-list.default">
-<div class="elementor-widget-container">
-<ul class="elementor-icon-list-items elementor-inline-items">
-<li class="elementor-icon-list-item elementor-inline-item">
-<a href="<%= about_user_path %>">
-<span class="elementor-icon-list-text">About Us</span>
-</a>
-</li>
-</ul>
-</div>
-</div>
 <div class="elementor-element elementor-element-ae823fe elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="ae823fe" data-element_type="widget" data-widget_type="icon-list.default">
 <div class="elementor-widget-container">
 <ul class="elementor-icon-list-items elementor-inline-items">
 <li class="elementor-icon-list-item elementor-inline-item">
-<a href="<%#= %>">
+<a href="<%= services_path %>">
 <span class="elementor-icon-list-text">Services</span>
 </a>
 </li>
 </ul>
 </div>
 </div>
+<div class="elementor-element elementor-element-303103b elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="303103b" data-element_type="widget" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items elementor-inline-items">
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="<%= about_user_path %>">
+<span class="elementor-icon-list-text">About </span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="elementor-element elementor-element-303103b elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="303103b" data-element_type="widget" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items elementor-inline-items">
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="<%= work_users_path %>">
+<span class="elementor-icon-list-text">Work </span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
 <div class="elementor-element elementor-element-c4959ac elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c4959ac" data-element_type="widget" data-widget_type="icon-list.default">
 <div class="elementor-widget-container">
 <ul class="elementor-icon-list-items elementor-inline-items">

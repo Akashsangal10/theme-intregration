@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   get "/work/users", to: "users#work"
   get "/contact/users", to: "users#contact_us"
   post "contact_info/users", to: "users#contact_info"
+  get "/services", to: "users#services"
 end

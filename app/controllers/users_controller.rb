@@ -18,6 +18,10 @@ class UsersController < ApplicationController
 
 	end
 
+	def services
+
+	end
+
 	def contact_info
 		@inquiry = Inquiry.create(name:params[:name], email:params[:email], message:params[:message])
 		if @inquiry	
