@@ -1725,7 +1725,9 @@ Contact Us </p>
 <p><span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" required /></span><br />
 <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email" required /></span><br />
 <span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span><br />
-<input type="submit"  class="wpcf7-form-control has-spinner wpcf7-submit " /></p>
+<!-- <input type="submit"  class="wpcf7-form-control has-spinner wpcf7-submit " /> -->
+<%= form.submit "Submit", class:"wpcf7-form-control has-spinner wpcf7-submit", onclick:"alert('Your form submit successfuly submitted !')" %>
+</p>
 <!-- <div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div> </div> -->
 <div class="wpcf7-response-output" aria-hidden="true"></div><!--</form> --></div></div> </div>
 <% end %>
