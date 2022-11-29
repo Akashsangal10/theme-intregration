@@ -1559,13 +1559,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 </ul> -->
 </li>
-<li id="menu-item-35220" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-35220 rt-dropdown"><a href="<%= about_user_path %>" data-description="">About</a>
+<li id="menu-item-35220" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-35220 rt-dropdown"><a href="<%= about_path %>" data-description="">About</a>
 
 </li>
-<li id="menu-item-36308" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-36308 rt-dropdown"><a href="<%= work_users_path %>" data-description="">Work</a>
+<li id="menu-item-36308" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-36308 rt-dropdown"><a href="<%= work_path %>" data-description="">Work</a>
 
 </li>
-<li id="menu-item-36814" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36814 rt-dropdown"><a href="<%= contact_users_path %>" data-description="">Contact Us</a>
+<li id="menu-item-36814" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36814 rt-dropdown"><a href="<%= contact_path %>" data-description="">Contact Us</a>
 </li>
 </ul> </nav>
 </div>
@@ -1724,9 +1724,9 @@ Contact Us </p>
 </div>
 <p><span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" required /></span><br />
 <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email" required /></span><br />
-<span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span><br />
+<span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message" required ></textarea></span><br />
 <!-- <input type="submit"  class="wpcf7-form-control has-spinner wpcf7-submit ", onclick="alert('Your form submit successfuly submitted !')" /> -->
-<%= form.submit "Submit", class:"wpcf7-form-control has-spinner wpcf7-submit button", onclick:"alert('Your form submit successfuly submitted !')" %>
+<%= form.submit  class:"wpcf7-form-control has-spinner wpcf7-submit" %>
 </p>
 <!-- <div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div> </div> -->
 <div class="wpcf7-response-output" aria-hidden="true"></div><!-- </form> --> </div></div> </div>
@@ -1957,7 +1957,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting </div>
 <div class="elementor-widget-container">
 <ul class="elementor-icon-list-items elementor-inline-items">
 <li class="elementor-icon-list-item elementor-inline-item">
-<a href="<%= about_user_path %>">
+<a href="<%= about_path %>">
 <span class="elementor-icon-list-text">About </span>
 </a>
 </li>
@@ -1968,7 +1968,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting </div>
 <div class="elementor-widget-container">
 <ul class="elementor-icon-list-items elementor-inline-items">
 <li class="elementor-icon-list-item elementor-inline-item">
-<a href="<%= work_users_path %>">
+<a href="<%= work_path %>">
 <span class="elementor-icon-list-text">Work</span>
 </a>
 </li>
@@ -1980,7 +1980,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting </div>
 <div class="elementor-widget-container">
 <ul class="elementor-icon-list-items elementor-inline-items">
 <li class="elementor-icon-list-item elementor-inline-item">
-<a href="<%= contact_users_path %>">
+<a href="<%= contact_path %>">
 <span class="elementor-icon-list-text">Contact Us</span>
 </a>
 </li>
@@ -2148,3 +2148,6 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script type='text/javascript' src='https://softek.radiantthemes.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.5.2' id='elementor-frontend-js'></script>
 </body>
 </html>
+
+
+

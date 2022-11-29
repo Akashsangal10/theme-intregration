@@ -1,3 +1,6 @@
+ActiveSupport::Dependencies.log_activity = true
+ActiveSupport::Dependencies.logger = Rails.logger
+
 class UsersController < ApplicationController
 	
 	def index
@@ -24,9 +27,12 @@ class UsersController < ApplicationController
 
 	def contact_info
 		@inquiry = Inquiry.create(name:params[:name], email:params[:email], message:params[:message])
-		if @inquiry	
-			flash.alert = "Contact Us form has been successfuly submitted"
-			redirect_to contact_users_path
+		if @inquiry
+			 WelcomeMailer.contact(@inquiry).deliver_now	
+			flash.alert = "Your query successfuly submitted"
+			redirect_to contact_path
+		else
+			flash[:error] = "Something went wrong"
 		end
 	end
 
