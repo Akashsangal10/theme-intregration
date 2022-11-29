@@ -2,6 +2,8 @@ class WelcomeMailer < ApplicationMailer
 
 	def contact_user(user)
 		@user = user
-    	mail to: @user.email, subject: "Quill Informatics" 
+		p "================"
+		p "#{@user.inspect}"
+    	mail to: @user, subject: "Quill Informatics" 
 	end
 end
