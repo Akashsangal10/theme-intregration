@@ -12,6 +12,7 @@ default: &default
 development:
   <<: *default
   # database: db/development.sqlite3
+  database: postgresql
   database: akash
   passwors: password
 
@@ -22,6 +23,7 @@ development:
 test:
   <<: *default
   # database: db/test.sqlite3
+  database: postgresql
   database: akash
   password: password
 
@@ -29,5 +31,6 @@ test:
 production:
   <<: *default
   # database: db/production.sqlite3
+  database: postgresql
   database: akash
   password: password
