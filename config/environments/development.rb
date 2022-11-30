@@ -82,8 +82,7 @@ Rails.application.configure do
   user_name:            'akash.s@pixoatic.com',
   password:             'zliemogsccxnkzcu',
   authentication:       'plain',
-  enable_starttls_auto: true,
-  open_timeout:         5000,
-  read_timeout:         5000 }
+  enable_starttls_auto: true
+ }
 
 end
