@@ -30,6 +30,7 @@ class UsersController < ApplicationController
 			redirect_to contact_path
 		else
 			flash[:error] = "Something went wrong"
+			redirect_to contact_path
 		end
 	end
 
