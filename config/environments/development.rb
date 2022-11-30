@@ -76,7 +76,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {:address => "localhost", :port => 1025}
   config.action_mailer.perform_deliveries = true
   config.action_mailer.smtp_settings = {
-  address:              'smtp.gmail.com',
+  address:              'smtp',
   port:                 587,
   domain:               'example.com',
   user_name:            'akash.s@pixoatic.com',
