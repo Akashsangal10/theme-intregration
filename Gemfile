@@ -62,6 +62,7 @@ group :development do
   gem "rspec-rails"
   gem "factory_bot_rails"
   # gem "pg", "~> 1.4"
+  gem 'sassc-rails'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -85,4 +86,5 @@ gem "omniauth"
 gem "omniauth-google-oauth2"
 gem "omniauth-rails_csrf_protection", "~> 1.0"
 gem 'sweetalert-rails'
+gem 'sass-rails'
 
