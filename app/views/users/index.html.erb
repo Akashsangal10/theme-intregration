@@ -8,23 +8,23 @@
      
     
     <style>
-         .loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #333333;
-            transition: opacity 0.75s, visibility 0.75s;
-        }
+        .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition: opacity 0.75s, visibility 0.75s;
+}
 
-        .loader--hidden {
-            opacity: 0;
-            visibility: hidden;
-          }
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
 
 .loader::after {
   content: "";
@@ -44,20 +44,23 @@
     transform: rotate(1turn);
   }
 }
+ 
 
+  
     </style>
 
     <script>
-                 window.addEventListener("load", () => {
-                const loader = document.querySelector(".loader");
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
 
-                loader.classList.add("loader--hidden");
+  loader.classList.add("loader--hidden");
 
-                loader.addEventListener("transitionend", () => {
-                document.body.removeChild(loader);
-            });
-          });
-                  
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+                                                   
      </script>
     <script src="https://kit.fontawesome.com/75b3855d2f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" >
@@ -3536,9 +3539,7 @@
 
 <body class="page-template page-template-elementor_header_footer page page-id-1078 wp-embed-responsive theme-softek woocommerce-no-js radiantthemes radiantthemes-softek elementor-default elementor-template-full-width elementor-kit-5 elementor-page elementor-page-1078" >
    
-        <div class="loader "></div>
-           <!--  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" />
-        </div> -->
+        <div class="loader"></div>
   
    <!-- <div > -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
