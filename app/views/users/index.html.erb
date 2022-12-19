@@ -7,7 +7,7 @@
     <title>Home &#8211; Quill Informatiocs</title>
      
     
-    <style>
+   <!--  <style>
         .loader {
   position: fixed;
   top: 0;
@@ -47,21 +47,22 @@
  
 
   
-    </style>
+    </style> -->
+    <!-- <script src="js/jquery.js"></script>
 
-    <script>
-window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
+    <script language="javascript">
+        window.addEventListener("load", () => {
+          let loader = document.querySelector(".loader");
 
-  loader.classList.add("loader--hidden");
+          loader.classList.add("loader--hidden");
 
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild(loader);
-  });
-});
-
+          loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+          });
+        });
+        
                                                    
-     </script>
+     </script> -->
     <script src="https://kit.fontawesome.com/75b3855d2f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" >
     <meta name='robots' content='noindex, nofollow' />
@@ -3641,8 +3642,8 @@ window.addEventListener("load", () => {
                                                                                 <div id="rt-mainMenu-trigger"> <a class="rt-lines-button x"><span class="lines"></span></a> </div>
                                                                                 <div id="rt-mainMenu" class="" style="min-height: 0px;">
                                                                                     <nav>
-                                                                                        <ul id="menu-main-menu" class="elementor-nav-menu">
-                                                                                            <li id="menu-item-52723" class="menu-item menu-item-type-post_type menu-item-object-mega_menu menu-item-52723 rt-dropdown mega-menu-item"><a href="<%= root_path %>" data-description="">Home</a>
+                                                                                        <ul id="menu-main-menu" class="elementor-nav-menu ">
+                                                                                            <li id="menu-item-52723" class="menu-item menu-item-type-post_type menu-item-object-mega_menu menu-item-52723 rt-dropdown mega-menu-item"><a href="<%= root_path %>"  data-description="">Home</a>
                                                                                             </li>
                                                                                             <li id="menu-item-474" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-474 rt-dropdown"><a href="<%= services_path %>" data-description="">Services</a>
                                                                                               <!--   <ul class="sub-menu rt-dropdown-menu menu-odd  menu-depth-1">
