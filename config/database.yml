@@ -34,3 +34,4 @@ production:
   database: postgresql
   database: akash
   password: password
+  # master_key: RAILS_MASTER_KEY
