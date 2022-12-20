@@ -56,6 +56,8 @@ group :development, :test do
   # gem "pg", "~> 1.4"
   gem 'guard-livereload', '~> 2.5', require: false
   gem 'rack-livereload'
+  gem 'dotenv-rails'
+  gem 'figaro'
 end
 
 group :development do
@@ -65,7 +67,8 @@ group :development do
   gem "factory_bot_rails"
   # gem "pg", "~> 1.4"
   gem 'sassc-rails'
-
+  gem 'dotenv-rails'
+  gem 'figaro'
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
@@ -78,6 +81,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem 'dotenv-rails'
+  gem 'figaro'
 end
 
 gem "cssbundling-rails"
