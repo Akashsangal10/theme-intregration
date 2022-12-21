@@ -33,6 +33,7 @@ production:
   # database: db/production.sqlite3
   database: akash_yqjs
   password: Sn9V6d2D58WYsDHOOvB62Nb2XXqSSTBQ
-  host: dpg-cehdni82i3mqvl906dr0-a
-  Username: Username
+  Hostname: dpg-cehdni82i3mqvl906dr0-a
+  Username: akash
+  port: 5432
   # master_key: RAILS_MASTER_KEY
