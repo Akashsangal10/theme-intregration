@@ -96,7 +96,4 @@ gem 'sweetalert-rails'
 gem 'sass-rails'
 gem 'activeadmin'
 gem 'devise'
-# gem 'font-awesome-less'
 
-gem "less-rails"
-gem "twitter-bootstrap-rails"
