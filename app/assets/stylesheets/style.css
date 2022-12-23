@@ -154,3 +154,11 @@ form.submitting .wpcf7-spinner {
 .wpcf7 input[type=tel] {
     direction: ltr
 }
+
+h1{
+    font-family: "Arial Black", Gadget, sans-serif ;
+}
+
+p{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
