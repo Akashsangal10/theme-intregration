@@ -1,0 +1,2 @@
+class TeamBrainStrorming < ApplicationRecord
+end

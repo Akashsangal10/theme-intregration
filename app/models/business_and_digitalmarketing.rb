@@ -1,0 +1,2 @@
+class BusinessAndDigitalmarketing < ApplicationRecord
+end

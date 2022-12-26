@@ -3,9 +3,12 @@
   "private": "true",
   "dependencies": {
     "@popperjs/core": "^2.11.6",
+    "activeadmin_quill_editor": "blocknotes/activeadmin_quill_editor",
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
     "sass": "^1.56.0"
   },
-   "scripts": { "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules" }
+  "scripts": {
+    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+  }
 }
