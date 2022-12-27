@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 	
 	def index
+		@business_and_digitalmarketing = BusinessAndDigitalmarketing.all
 	end
 
 

@@ -3745,11 +3745,11 @@
                                                                     <rs-module id="rev_slider_6_1" style="" data-version="6.5.12">
                                                                         <rs-slides>
                                                                             <rs-slide style="position: absolute;" data-key="rs-6" data-title="Slide" data-anim="ms:1000;r:0;" data-in="o:0;" data-out="a:false;">
-                                                                                <img decoding="async" src="//softek.radiantthemes.com/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="nw-bg.png" width="1366" height="701" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/assets/nw-bg.png"
+                                                                                <img decoding="async" src="#" alt="" title="nw-bg.png" width="1366" height="701" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/assets/nw-bg.png"
                                                                                     data-no-retina>
                                                                                 <rs-layer id="slider-6-slide-6-layer-0" data-type="image" data-rsp_ch="on" data-xy="xo:969px,826px,627px,305px;yo:44px,37px,28px,513px;" data-text="w:normal;s:20,17,12,6;l:0,21,15,7;" data-dim="w:237px,202px,153px,100px;h:453px,386px,293px,191px;" data-frame_0="sX:0.9;sY:0.9;"
                                                                                     data-frame_1="e:power2.inOut;sp:1000;" data-frame_999="o:0;st:w;sR:2000;" data-tloop="t:frame_1;r:-2;" data-loop_0="rZ:-5deg;" data-loop_999="rZ:5deg;sp:8000;e:power1.inOut;yyr:t;"
-                                                                                    style="z-index:8;"><img decoding="async" loading="lazy" src="//softek.radiantthemes.com/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="240"
+                                                                                    style="z-index:8;"><img decoding="async" loading="lazy" src="#" alt="" class="tp-rs-img rs-lazyload" width="240"
                                                                                         height="459" data-lazyload="assets/home3.png" data-no-retina>
                                                                                 </rs-layer>
                                                                                 <rs-layer id="slider-6-slide-6-layer-1" data-type="text" data-color="#104cba" data-rsp_ch="on" data-xy="x:l,l,l,c;xo:30px,15px,15px,0;yo:219px,186px,136px,90px;"
@@ -3774,7 +3774,7 @@
                                                                                 </rs-layer>
                                                                                 <rs-layer id="slider-6-slide-6-layer-8" data-type="image" data-rsp_ch="on" data-xy="x:l,l,l,c;xo:588px,501px,428px,-113px;yo:358px,305px,220px,601px;" data-text="w:normal;s:20,17,12,6;l:0,21,15,7;"
                                                                                     data-dim="w:123px,104px,79px,100px;h:314px,267px,202px,255px;" data-frame_0="x:-50,-42,-31,-15;" data-frame_1="st:740;sp:1000;sR:740;" data-frame_999="o:0;st:w;sR:1260;" style="z-index:16;"><img decoding="async" loading="lazy" src="//softek.radiantthemes.com/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="123"
-                                                                                        height="314" data-lazyload="/assets/home1.png" data-no-retina>
+                                                                                        height="314" data-lazyload= <%= @business_and_digitalmarketing.image1_as_thumbnails.each do |image| %> <%= link_to image_tag(image1), image1 %> <% end %> data-no-retina>
                                                                                 </rs-layer>
                                                                                 <rs-layer id="slider-6-slide-6-layer-9" data-type="image" data-rsp_ch="on" data-xy="xo:477px,407px,309px,190px;yo:521px,444px,337px,199px;" data-text="w:normal;s:20,17,12,6;l:0,21,15,7;"
                                                                                     data-dim="w:6px,5px,3px,1px;h:6px,5px,3px,1px;" data-frame_999="o:0;st:w;sR:2700;" data-loop_0="y:-5px;" data-loop_999="y:10;sp:6000;e:sine.inOut;yym:t;" style="z-index:17;"><img decoding="async" loading="lazy" src="//softek.radiantthemes.com/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="12"
@@ -3862,7 +3862,7 @@
                                                                     <div class="elementor-widget-wrap elementor-element-populated">
                                                                         <div class="elementor-element elementor-element-b21a8d0 elementor-widget elementor-widget-image" data-id="b21a8d0" data-element_type="widget" data-widget_type="image.default">
                                                                             <div class="elementor-widget-container">
-                                                                                <img decoding="async" src="/assets/success.png" title="Img_02" alt="Img_02" />                                                                                </div>
+                                                                                <img decoding="async" src="<%= BusinessCollaboration.last.image %>" title="Img_02" alt="Img_02" />                                                                                </div>
                                                                         </div>
                                                                         <div class="elementor-element elementor-element-5c7db6a elementor-widget elementor-widget-heading" data-id="5c7db6a" data-element_type="widget" data-widget_type="heading.default">
                                                                             <div class="elementor-widget-container">
@@ -4561,13 +4561,13 @@
                                                                         <div class="elementor-element elementor-element-464dbb2 elementor-invisible elementor-widget elementor-widget-heading" data-id="464dbb2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:200}"
                                                                             data-widget_type="heading.default">
                                                                             <div class="elementor-widget-container">
-                                                                                <h3 class="elementor-heading-title elementor-size-default">Have a project in mind? Let's get to work</h3>
+                                                                                <h3 class="elementor-heading-title elementor-size-default"><%= StartProject.last.title %></h3>
                                                                             </div>
                                                                         </div>
                                                                         <div class="elementor-element elementor-element-8b3686d elementor-invisible elementor-widget elementor-widget-text-editor" data-id="8b3686d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400}"
                                                                             data-widget_type="text-editor.default">
                                                                             <div class="elementor-widget-container">
-                                                                                <p>Lorem Ipsum is simply dummy been the industry&#8217;s standard dummy text.</p>
+                                                                                <p><%= StartProject.last.description %></p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -4610,12 +4610,12 @@
                                                                         </div>
                                                                         <div class="elementor-element elementor-element-7fc6642 elementor-widget elementor-widget-heading" data-id="7fc6642" data-element_type="widget" data-widget_type="heading.default">
                                                                             <div class="elementor-widget-container">
-                                                                                <h3 class="elementor-heading-title elementor-size-default">Our best services we provide!</h3>
+                                                                                <h3 class="elementor-heading-title elementor-size-default"><%= FeatureService.last.title %></h3>
                                                                             </div>
                                                                         </div>
                                                                         <div class="elementor-element elementor-element-f5338e8 elementor-widget elementor-widget-text-editor" data-id="f5338e8" data-element_type="widget" data-widget_type="text-editor.default">
                                                                             <div class="elementor-widget-container">
-                                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry&#8217;s standard dummy text. Ever since the 1500s, when an unknown.</p>
+                                                                                <p><%= FeatureService.last.description %></p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -4784,10 +4784,10 @@
                                                                                     <div class="elementor-icon-box-content">
                                                                                         <h6 class="elementor-icon-box-title">
                                                                                             <span>
-Content Strategy </span>
+<%= FeatureService.last.title1 %> </span>
                                                                                         </h6>
                                                                                         <p class="elementor-icon-box-description">
-                                                                                            Lorem Ipsum. Progravida nibh an sollicitudin, lorem quis </p>
+                                                                                            <%= FeatureService.last.description1 %> </p>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -4865,10 +4865,10 @@ Content Strategy </span>
                                                                                     <div class="elementor-icon-box-content">
                                                                                         <h6 class="elementor-icon-box-title">
                                                                                             <span>
-Technology </span>
+<%= FeatureService.last.title2 %> </span>
                                                                                         </h6>
                                                                                         <p class="elementor-icon-box-description">
-                                                                                            Lorem Ipsum. Progravida nibh an sollicitudin, lorem quis </p>
+                                                                                            <%= FeatureService.last.description2 %> </p>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -4941,10 +4941,10 @@ Technology </span>
                                                                                     <div class="elementor-icon-box-content">
                                                                                         <h6 class="elementor-icon-box-title">
                                                                                             <span>
-Media Management </span>
+<%= FeatureService.last.title3 %> </span>
                                                                                         </h6>
                                                                                         <p class="elementor-icon-box-description">
-                                                                                            Lorem Ipsum. Progravida nibh an sollicitudin, lorem quis </p>
+                                                                                            <%= FeatureService.last.description3 %> </p>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -5032,10 +5032,10 @@ Media Management </span>
                                                                                     <div class="elementor-icon-box-content">
                                                                                         <h6 class="elementor-icon-box-title">
                                                                                             <span>
-Highly Customizable </span>
+<%= FeatureService.last.title4 %> </span>
                                                                                         </h6>
                                                                                         <p class="elementor-icon-box-description">
-                                                                                            Lorem Ipsum. Progravida nibh an sollicitudin, lorem quis </p>
+                                                                                            <%= FeatureService.last.description4 %> </p>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -5148,10 +5148,10 @@ Highly Customizable </span>
                                                                                     <div class="elementor-icon-box-content">
                                                                                         <h6 class="elementor-icon-box-title">
                                                                                             <span>
-Network Protection </span>
+<%= FeatureService.last.title5 %> </span>
                                                                                         </h6>
                                                                                         <p class="elementor-icon-box-description">
-                                                                                            Lorem Ipsum. Progravida nibh an sollicitudin, lorem quis </p>
+                                                                                            <%= FeatureService.last.description5 %> </p>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -5224,10 +5224,10 @@ Network Protection </span>
                                                                                     <div class="elementor-icon-box-content">
                                                                                         <h6 class="elementor-icon-box-title">
                                                                                             <span>
-Customer Support </span>
+<%= FeatureService.last.title6 %> </span>
                                                                                         </h6>
                                                                                         <p class="elementor-icon-box-description">
-                                                                                            Lorem Ipsum. Progravida nibh an sollicitudin, lorem quis </p>
+                                                                                            <%= FeatureService.last.description6 %> </p>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>

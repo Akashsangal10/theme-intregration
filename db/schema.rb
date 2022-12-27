@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_26_151057) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_27_085305) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -73,6 +73,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_26_151057) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image1"
+    t.string "image2"
+    t.string "image3"
   end
 
   create_table "business_collaborations", force: :cascade do |t|
@@ -91,6 +94,31 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_26_151057) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "feature_services", force: :cascade do |t|
+    t.string "title1"
+    t.string "description1"
+    t.string "title2"
+    t.string "description2"
+    t.string "title3"
+    t.string "description3"
+    t.string "title4"
+    t.string "description4"
+    t.string "title5"
+    t.string "description5"
+    t.string "title6"
+    t.string "description6"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "image1"
+    t.string "image2"
+    t.string "image3"
+    t.string "image4"
+    t.string "image5"
+    t.string "image6"
+    t.string "title"
+    t.string "description"
+  end
+
   create_table "inquiries", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -107,6 +135,19 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_26_151057) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "offers", force: :cascade do |t|
+    t.string "title1"
+    t.string "title2"
+    t.string "title3"
+    t.string "title4"
+    t.string "description1"
+    t.string "description2"
+    t.string "description3"
+    t.string "description4"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "ourcompanies", force: :cascade do |t|
     t.string "title1"
     t.string "title2"
@@ -119,9 +160,32 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_26_151057) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "service_contents", force: :cascade do |t|
+    t.string "title1"
+    t.string "description1"
+    t.string "title2"
+    t.string "description2"
+    t.string "title3"
+    t.string "description3"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "image1"
+    t.string "image2"
+    t.string "image3"
+    t.string "title"
+    t.string "description"
+  end
+
   create_table "skills", force: :cascade do |t|
     t.string "name"
     t.string "type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "start_projects", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,0 +1,2 @@
+class ServiceContent < ApplicationRecord
+end
