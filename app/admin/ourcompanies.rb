@@ -5,38 +5,42 @@ ActiveAdmin.register Ourcompany do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :title1, :title2, :title3, :description1, :description2, :description3, :image
-  index do
-    selectable_column
-    id_column
-    column :title1
-    column :describtion1, as: :quill_editor
-    column :title2
-    column :describtion2, as: :quill_editor
-    column :title3
-    column :describtion3, as: :quill_editor
-    column :image 
-    column :created_at
-    column :updated_at
-    actions
-  end
+  permit_params :title1, :title2, :title3, :description1, :description2, :description3, images: []
 
-  filter :title1
-  filter :title2
-  filter :title3
-  filter :created_at
-
-  form do |f|
-    f.inputs do
+   form html: { multipart: true } do |f|
+    f.inputs "Publication" do
       f.input :title1
       f.input :description1
       f.input :title2
       f.input :description2
       f.input :title3
       f.input :description3
-      f.input :image, as: :file
+      # f.input :published
+      f.input :images, as: :file, input_html: { multiple: true }
     end
+
     f.actions
+  end
+
+ show do
+    attributes_table do
+      row :images do
+        div do
+          ourcompany.images.each do |img|
+            div do
+              image_tag url_for(img), size: "200x200"
+            end
+          end
+        end
+      end
+
+      row :description1
+      row :title1
+      row :description2
+      row :title2
+      row :description3
+      row :title3
+    end
   end
   
 end

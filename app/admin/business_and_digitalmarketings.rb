@@ -5,19 +5,19 @@ ActiveAdmin.register BusinessAndDigitalmarketing do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :title, :description,  :image2, :image3, images: []
+  permit_params :title, :description, images: []
   form html: { multipart: true } do |f|
     f.inputs "Publication" do
       f.input :title
       f.input :description
       # f.input :published
-      f.input :image, as: :file, input_html: { multiple: true }
+      f.input :images, as: :file, input_html: { multiple: true }
     end
 
     f.actions
   end
 
-  show do
+ show do
     attributes_table do
       row :images do
         div do

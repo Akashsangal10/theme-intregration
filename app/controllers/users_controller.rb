@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 	
 	def index
-		@business_and_digitalmarketing = BusinessAndDigitalmarketing.all
+		@business_and_digitalmarketing = BusinessAndDigitalmarketing.last
 	end
 
 

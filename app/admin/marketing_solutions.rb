@@ -5,29 +5,35 @@ ActiveAdmin.register MarketingSolution do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :title, :description, :image
-  index do
-    selectable_column
-    id_column
-    column :title
-    column :describtion, as: :quill_editor
-    column :image 
-    column :created_at
-    column :updated_at
-    actions
-  end
+  permit_params :title, :description, images: []
+  
 
-  filter :title
-  filter :description
-  filter :created_at
-
-  form do |f|
-    f.inputs do
+   form html: { multipart: true } do |f|
+    f.inputs "Publication" do
       f.input :title
       f.input :description
-      f.input :image, as: :file
+      # f.input :published
+      f.input :images, as: :file, input_html: { multiple: true }
     end
+
     f.actions
+  end
+
+ show do
+    attributes_table do
+      row :images do
+        div do
+          marketing_solution.images.each do |img|
+            div do
+              image_tag url_for(img), size: "200x200"
+            end
+          end
+        end
+      end
+
+      row :description
+      row :title
+    end
   end
   
 end
