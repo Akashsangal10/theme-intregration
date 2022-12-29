@@ -10,7 +10,7 @@ ActiveAdmin.register StartProject do
     selectable_column
     id_column
     column :title
-    column :describtion, as: :quill_editor
+    column :describtion
     column :created_at
     column :updated_at
     actions
@@ -23,7 +23,7 @@ ActiveAdmin.register StartProject do
   form do |f|
     f.inputs do
       f.input :title
-      f.input :description
+      f.input :description, as: :quill_editor
     end
     f.actions
   end

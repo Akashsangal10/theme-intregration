@@ -10,11 +10,11 @@ ActiveAdmin.register Ourcompany do
    form html: { multipart: true } do |f|
     f.inputs "Publication" do
       f.input :title1
-      f.input :description1
+      f.input :description1, as: :quill_editor
       f.input :title2
-      f.input :description2
+      f.input :description2, as: :quill_editor
       f.input :title3
-      f.input :description3
+      f.input :description3, as: :quill_editor
       # f.input :published
       f.input :images, as: :file, input_html: { multiple: true }
     end

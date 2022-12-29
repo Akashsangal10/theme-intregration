@@ -11,7 +11,7 @@ ActiveAdmin.register MarketingSolution do
    form html: { multipart: true } do |f|
     f.inputs "Publication" do
       f.input :title
-      f.input :description
+      f.input :description, as: :quill_editor
       # f.input :published
       f.input :images, as: :file, input_html: { multiple: true }
     end

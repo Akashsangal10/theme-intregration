@@ -10,7 +10,7 @@ ActiveAdmin.register ServiceContent do
     selectable_column
     id_column
     column :title
-    column :description
+    column :description, as: :quill_editor
     column :title1
     column :describtion1, as: :quill_editor
     column :image1

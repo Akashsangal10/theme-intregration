@@ -11,7 +11,7 @@ ActiveAdmin.register TeamBrainStrorming do
     selectable_column
     id_column
     column :title
-    column :describtion, as: :quill_editor
+    column :describtion
     column :image 
     column :created_at
     column :updated_at
@@ -25,7 +25,7 @@ ActiveAdmin.register TeamBrainStrorming do
   form do |f|
     f.inputs do
       f.input :title
-      f.input :description
+      f.input :description, as: :quill_editor
       f.input :image, as: :file
     end
     f.actions
