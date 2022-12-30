@@ -1,39 +1,37 @@
 ActiveAdmin.register MarketingSolution do
 
-  # See permitted parameters documentation:
-  # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  #
-  # Uncomment all parameters which should be permitted for assignment
-  #
-  permit_params :title, :description, images: []
+
+  permit_params :title, :description, :image
   
 
-   form html: { multipart: true } do |f|
-    f.inputs "Publication" do
+   form  do |f|
+    f.inputs "MarketingSolution" do
       f.input :title
-      f.input :description, as: :quill_editor
-      # f.input :published
-      f.input :images, as: :file, input_html: { multiple: true }
+      f.input :description
+      f.input :image, as: :file
     end
-
     f.actions
   end
 
  show do
     attributes_table do
-      row :images do
-        div do
-          marketing_solution.images.each do |img|
-            div do
-              image_tag url_for(img), size: "200x200"
-            end
-          end
-        end
-      end
-
-      row :description
       row :title
+      row :description
+      row :image do |ad|
+        image_tag url_for(ad.image)
+      end
     end
+  end
+
+   index do |f|
+    selectable_column
+    id_column
+    column :title
+    column :description
+    column :image do |obj|
+      image_tag (url_for(obj) rescue "")
+    end
+    f.actions
   end
   
 end

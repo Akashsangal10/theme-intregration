@@ -5,7 +5,7 @@ ActiveAdmin.register CodeAndDegin do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :title, :description, :image
+  permit_params :title, :description
   #
   # or
   #
@@ -19,7 +19,6 @@ ActiveAdmin.register CodeAndDegin do
     id_column
     column :title
     column :describtion, as: :quill_editor
-    column :image 
     column :created_at
     column :updated_at
     actions
@@ -33,7 +32,6 @@ ActiveAdmin.register CodeAndDegin do
     f.inputs do
       f.input :title
       f.input :description
-      f.input :image, as: :file
     end
     f.actions
   end

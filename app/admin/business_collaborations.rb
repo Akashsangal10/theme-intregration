@@ -1,36 +1,48 @@
 ActiveAdmin.register BusinessCollaboration do
 
-  # See permitted parameters documentation:
-  # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-
  
-  permit_params :title, :description, images: []
-  form html: { multipart: true } do |f|
-    f.inputs "Publication" do
+  permit_params :title, :description, :image, :image1, :image2
+
+  form  do |f|
+    f.inputs "BusinessCollaboration" do
       f.input :title
-      f.input :description, as: :quill_editor
+      f.input :description
       # f.input :published
-      f.input :images, as: :file, input_html: { multiple: true }
+      # f.input :images, as: :file, input_html: { multiple: true }
+      f.input :image, as: :file
+      f.input :image1, as: :file
+      f.input :image2, as: :file
     end
 
     f.actions
   end
 
- show do
+show do
     attributes_table do
-      row :images do
-        div do
-          business_collaboration.images.each do |img|
-            div do
-              image_tag url_for(img), size: "200x200"
-            end
-          end
-        end
-      end
-
-      row :description
       row :title
+      row :description
+      row :image do |ad|
+        image_tag url_for(ad.image)
+      end
+      row :image1 do |ad|
+        image_tag url_for(ad.image1)
+      end
+      row :image2 do |ad|
+        image_tag url_for(ad.image2)
+      end
     end
   end
+
+  index do |f|
+    selectable_column
+    id_column
+    column :title
+    column :description
+    column :image do |obj|
+      image_tag (url_for(obj.image) rescue "")
+    end 
+    f.actions
+  end
+
   
 end

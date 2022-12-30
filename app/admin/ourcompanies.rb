@@ -1,39 +1,27 @@
 ActiveAdmin.register Ourcompany do
 
-  # See permitted parameters documentation:
-  # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  #
-  # Uncomment all parameters which should be permitted for assignment
-  #
-  permit_params :title1, :title2, :title3, :description1, :description2, :description3, images: []
+
+  
+  permit_params :title1, :title2, :title3, :description1, :description2, :description3, :image
 
    form html: { multipart: true } do |f|
-    f.inputs "Publication" do
+    f.inputs "Ourcompany" do
       f.input :title1
-      f.input :description1, as: :quill_editor
+      f.input :description1
       f.input :title2
-      f.input :description2, as: :quill_editor
+      f.input :description2
       f.input :title3
-      f.input :description3, as: :quill_editor
-      # f.input :published
-      f.input :images, as: :file, input_html: { multiple: true }
+      f.input :description3
+      f.input :image, as: :file
     end
-
     f.actions
   end
 
  show do
     attributes_table do
-      row :images do
-        div do
-          ourcompany.images.each do |img|
-            div do
-              image_tag url_for(img), size: "200x200"
-            end
-          end
-        end
+      row :images do |obj|
+        image_tag url_for(obj.image)
       end
-
       row :description1
       row :title1
       row :description2
@@ -41,6 +29,20 @@ ActiveAdmin.register Ourcompany do
       row :description3
       row :title3
     end
+  end  
+
+  index do |f|
+    selectable_column
+    id_column
+    column :title1
+    column :description1
+    column :title2
+    column :description2
+    column :title3
+    column :description3
+    column :image do |obj|
+      image_tag (url_for(obj.image) rescue "")
+    end
+    f.actions
   end
-  
 end

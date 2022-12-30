@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_29_073540) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_30_181548) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -73,10 +73,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_29_073540) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "image"
     t.string "image1"
     t.string "image2"
     t.string "image3"
+    t.string "image"
   end
 
   create_table "business_collaborations", force: :cascade do |t|
@@ -85,6 +85,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_29_073540) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image"
+    t.string "image1"
+    t.string "image2"
   end
 
   create_table "code_and_degins", force: :cascade do |t|
@@ -136,6 +138,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_29_073540) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "new_businesses", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "description1"
+    t.string "title1"
+    t.string "title2"
+    t.string "title3"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "offers", force: :cascade do |t|
     t.string "title1"
     t.string "title2"
@@ -161,6 +174,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_29_073540) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "peopel_says", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "description1"
+    t.string "description2"
+    t.string "title1"
+    t.string "title2"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "service_contents", force: :cascade do |t|
     t.string "title1"
     t.string "description1"
@@ -175,6 +199,21 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_29_073540) do
     t.string "image3"
     t.string "title"
     t.string "description"
+  end
+
+  create_table "services", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "title1"
+    t.string "description1"
+    t.string "title2"
+    t.string "description2"
+    t.string "title3"
+    t.string "description3"
+    t.string "title4"
+    t.string "description4"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "skills", force: :cascade do |t|

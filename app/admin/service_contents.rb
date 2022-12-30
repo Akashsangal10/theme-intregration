@@ -1,25 +1,28 @@
 ActiveAdmin.register ServiceContent do
 
-  # See permitted parameters documentation:
-  # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  #
-  # Uncomment all parameters which should be permitted for assignment
-  #
+ 
   permit_params :title1, :description1, :title2, :description2, :title3, :description3, :image1, :image2, :image3, :title, :description
+ 
   index do
     selectable_column
     id_column
     column :title
-    column :description, as: :quill_editor
+    column :description
     column :title1
-    column :describtion1, as: :quill_editor
-    column :image1
+    column :describtion1
+    column :image1 do |obj|
+      image_tag (url_for(obj.image1) rescue "")
+    end
     column :title2
-    column :describtion2, as: :quill_editor
-    column :image2
+    column :describtion2
+    column :image2 do |obj|
+      image_tag url_for(obj.image2)
+    end
     column :title3
-    column :describtion3, as: :quill_editor
-    column :image3 
+    column :describtion3
+    column :image3 do |obj|
+      image_tag url_for(obj.image3)
+    end
     column :created_at
     column :updated_at
     actions
@@ -30,7 +33,7 @@ ActiveAdmin.register ServiceContent do
   filter :title3
   filter :created_at
 
-  form do |f|
+  form html: { multipart: true } do |f|
     f.inputs do
       f.input :title
       f.input :description
@@ -46,4 +49,25 @@ ActiveAdmin.register ServiceContent do
     end
     f.actions
   end
+
+   show do
+    attributes_table do
+      row :image1 do |obj|
+        image_tag url_for(obj.image1)
+      end
+      row :image2 do |obj|
+        image_tag url_for(obj.image2)
+      end
+      row :image3 do |obj|
+        image_tag url_for(obj.image3)
+      end
+      row :description1
+      row :title1
+      row :description2
+      row :title2
+      row :description3
+      row :title3
+    end
+  end 
+
 end
