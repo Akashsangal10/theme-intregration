@@ -10,9 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_30_181548) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_02_082802) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "about_companies", force: :cascade do |t|
+    t.string "tite"
+    t.string "description"
+    t.string "description1"
+    t.string "title1"
+    t.string "description2"
+    t.string "title2"
+    t.string "description3"
+    t.string "title3"
+    t.string "description4"
+    t.string "title4"
+    t.string "description5"
+    t.string "title5"
+    t.string "description6"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "title6"
+    t.string "description7"
+  end
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -66,6 +86,19 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_30_181548) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  end
+
+  create_table "any_queries", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "title1"
+    t.string "description1"
+    t.string "title2"
+    t.string "description2"
+    t.string "title3"
+    t.string "description3"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "business_and_digitalmarketings", force: :cascade do |t|
@@ -122,6 +155,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_30_181548) do
     t.string "description"
   end
 
+  create_table "get_in_touches", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "inquiries", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -158,6 +198,18 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_30_181548) do
     t.string "description2"
     t.string "description3"
     t.string "description4"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "our_histories", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "description1"
+    t.string "title1"
+    t.string "description2"
+    t.string "title2"
+    t.string "description3"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -219,6 +271,20 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_30_181548) do
   create_table "skills", force: :cascade do |t|
     t.string "name"
     t.string "type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "social_channels", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "description1"
+    t.string "title1"
+    t.string "description2"
+    t.string "title2"
+    t.string "description3"
+    t.string "title3"
+    t.string "description4"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

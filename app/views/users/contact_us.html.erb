@@ -1678,7 +1678,7 @@ Contact Us </p>
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-6e5fbca move-image-left-right elementor-invisible elementor-widget elementor-widget-image" data-id="6e5fbca" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="image.default">
 <div class="elementor-widget-container">
-<img decoding="async" width="1492" height="1018" src="/assets/05-8.png" class="attachment-full size-full" alt="05" loading="lazy" srcset="/assets/05-8.png 1492w, /assets/05-8.png 300w, /assets/05-8.png 1024w, /assets/05-8.png 768w, /assets/05-8.png 600w" sizes="(max-width: 1492px) 100vw, 1492px" /> </div>
+<%= image_tag(GetInTouch.last.image1)  %> </div>
 </div>
 </div>
 </div>
@@ -1702,11 +1702,11 @@ Contact Us </p>
 </div>
 <div class="elementor-element elementor-element-d5f29e9 elementor-invisible elementor-widget elementor-widget-heading" data-id="d5f29e9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
 <div class="elementor-widget-container">
-<h6 class="elementor-heading-title elementor-size-default">Get in Touch</h6> </div>
+<h6 class="elementor-heading-title elementor-size-default"><%= GetInTouch.first.title %></h6> </div>
 </div>
 <div class="elementor-element elementor-element-80acdb1 elementor-invisible elementor-widget elementor-widget-heading" data-id="80acdb1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="heading.default">
 <div class="elementor-widget-container">
-<h3 class="elementor-heading-title elementor-size-default">we provide best services Need Help?</h3> </div>
+<h3 class="elementor-heading-title elementor-size-default"><%= GetInTouch.first.description %></h3> </div>
 </div>
 <div class="elementor-element elementor-element-6418b66 rt-get-in-touch-form-hm-five elementor-invisible elementor-widget elementor-widget-void-section-cf7" data-id="6418b66" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="void-section-cf7.default">
 <div class="elementor-widget-container">
@@ -1762,15 +1762,15 @@ Contact Us </p>
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-fc67e78 elementor-invisible elementor-widget elementor-widget-heading" data-id="fc67e78" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
 <div class="elementor-widget-container">
-<h6 class="elementor-heading-title elementor-size-default">Advance Digital Metrics</h6> </div>
+<h6 class="elementor-heading-title elementor-size-default"><%= SocialChannel.last.title %></h6> </div>
 </div>
 <div class="elementor-element elementor-element-41dc080 elementor-invisible elementor-widget elementor-widget-heading" data-id="41dc080" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="heading.default">
 <div class="elementor-widget-container">
-<h3 class="elementor-heading-title elementor-size-default">Contact Us via our social channels.</h3> </div>
+<h3 class="elementor-heading-title elementor-size-default"><%= SocialChannel.last.description %></h3> </div>
 </div>
 <div class="elementor-element elementor-element-439bcbf elementor-invisible elementor-widget elementor-widget-text-editor" data-id="439bcbf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="text-editor.default">
 <div class="elementor-widget-container">
-Nulla eleifend, lectus eu gravida facilisis, ipsum metus faucibus eros, vitae vulputate nibh libero ac metus, phasellus magna erat, consectetur </div>
+<%= SocialChannel.last.description1 %> </div>
 </div>
 </div>
 </div>
@@ -1795,10 +1795,10 @@ Nulla eleifend, lectus eu gravida facilisis, ipsum metus faucibus eros, vitae vu
 <div class="elementor-icon-box-content">
 <p class="elementor-icon-box-title">
 <span>
-Our Location </span>
+<%= SocialChannel.last.title1 %> </span>
 </p>
 <p class="elementor-icon-box-description">
-121 King St. Melbourne VIC 3000, Australia </p>
+<%= SocialChannel.last.description2 %> </p>
 </div>
 </div>
 </div>
@@ -1817,10 +1817,10 @@ Our Location </span>
 <div class="elementor-icon-box-content">
 <p class="elementor-icon-box-title">
 <span>
-Phone Number </span>
+<%= SocialChannel.last.title2 %> </span>
 </p>
 <p class="elementor-icon-box-description">
-+1 (888) 123-4567 </p>
+<%= SocialChannel.last.description3 %> </p>
 </div>
 </div>
 </div>
@@ -1839,10 +1839,10 @@ Phone Number </span>
 <div class="elementor-icon-box-content">
 <p class="elementor-icon-box-title">
 <span>
-Email Address </span>
+<%= SocialChannel.last.title3 %> </span>
 </p>
 <p class="elementor-icon-box-description">
-<a href="#" class="__cf_email__" data-cfemail="c8a1a6aea788adb0a9a5b8a4ade6aba7a5">example@gmail.com</a> </p>
+<a href="#" class="__cf_email__" data-cfemail="c8a1a6aea788adb0a9a5b8a4ade6aba7a5"><%= SocialChannel.last.description4 %></a> </p>
 </div>
 </div>
 </div>
