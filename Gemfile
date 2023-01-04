@@ -98,4 +98,5 @@ gem 'activeadmin'
 gem 'devise'
 gem 'activeadmin_quill_editor'
 gem 'sassc'
+gem 'jquery-rails'
 

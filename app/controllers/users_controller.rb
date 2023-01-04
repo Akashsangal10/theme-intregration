@@ -27,7 +27,7 @@ class UsersController < ApplicationController
 		@inquiry = Inquiry.create(name:params[:name], email:params[:email], message:params[:message])
 		if @inquiry
 			 WelcomeMailer.contact_user(@inquiry).deliver	
-			flash.alert = "Your query successfuly submitted"
+			flash[:success] = "Your query successfuly submitted"
 			redirect_to contact_path
 		else
 			flash[:error] = "Something went wrong"
@@ -36,3 +36,8 @@ class UsersController < ApplicationController
 	end
 
 end
+
+
+
+
+

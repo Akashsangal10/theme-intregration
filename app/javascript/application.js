@@ -3,3 +3,17 @@ import "@hotwired/turbo-rails"
 import "controllers"
 
 import * as bootstrap from "bootstrap"
+ 
+      
+ $(document).ready(function(){
+ 	setTimeout(function(){
+ 		$('.alert .alert-success ').fadeOut("slow", function(){
+ 			$(this).remove();
+ 		})
+ 	}, 4500);
+ });
+
+
+
+ 
+     

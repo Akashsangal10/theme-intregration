@@ -1726,7 +1726,7 @@ Contact Us </p>
 <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email" required /></span><br />
 <span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message" required ></textarea></span><br />
 <!-- <input type="submit"  class="wpcf7-form-control has-spinner wpcf7-submit ", onclick="alert('Your form submit successfuly submitted !')" /> -->
-<%= form.submit "Submit",  class:"wpcf7-form-control has-spinner wpcf7-submit" %>
+<%= form.submit data: { turbo_confirm: 'Please click for your query' } , class:"wpcf7-form-control has-spinner wpcf7-submit" %>
 </p>
 <!-- <div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div> </div> -->
 <div class="wpcf7-response-output" aria-hidden="true"></div><!-- </form> --> </div></div> </div>
@@ -2150,4 +2150,17 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 </html>
 
 
+<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.min.js"></script>
 
+<script type="text/javascript">
+
+// 	$("#submitForm").click(function() {
+   // alert("The Form has been Submitted.");
+// 	});	
+
+	
+</script>
