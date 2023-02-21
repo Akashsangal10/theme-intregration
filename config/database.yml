@@ -31,9 +31,15 @@ test:
 production:
   <<: *default
   # database: db/production.sqlite3
-  database: akash_adeh
-  password: 3VxjmVmajZjEm3xd1GPxgBjHugRD40x3
-  host: dpg-cehh5pp4reb94c1v63ag-a
-  username: akash
-  port: 5432
+  # database: akash_adeh
+  # password: 3VxjmVmajZjEm3xd1GPxgBjHugRD40x3
+  # host: dpg-cehh5pp4reb94c1v63ag-a
+  # username: akash
+  # port: 5432
   # master_key: RAILS_MASTER_KEY
+  database: akash_nxfz
+  password: fvKdXQyHiS4tI025qJhwvSRO8cx4wL5H
+  host: dpg-cfqav4irrk08lt5bkovg-a
+  username: akash 
+  port: 5432
+  

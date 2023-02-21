@@ -36,7 +36,7 @@ ActiveAdmin.setup do |config|
   # config.default_namespace = :admin
   #
   # You can customize the settings for each namespace by using
-  # a namespace block. For example, to change the site title
+  # a namespace block. For examplegem 'arctic_admin', to change the site title
   # within a namespace:
   #
   #   config.namespace :admin do |admin|
@@ -332,4 +332,8 @@ ActiveAdmin.setup do |config|
   # You can switch to using Webpacker here.
   #
   # config.use_webpacker = true
+
+  meta_tags_options = { viewport: 'width=device-width, initial-scale=1' }
+config.meta_tags = meta_tags_options
+config.meta_tags_for_logged_out_pages = meta_tags_options
 end

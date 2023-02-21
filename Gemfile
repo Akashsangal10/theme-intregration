@@ -99,4 +99,4 @@ gem 'devise'
 gem 'activeadmin_quill_editor'
 gem 'sassc'
 gem 'jquery-rails'
-
+gem 'arctic_admin'
