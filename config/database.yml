@@ -37,8 +37,8 @@ production:
   # username: akash
   # port: 5432
   # master_key: RAILS_MASTER_KEY
-  database: akash1
-  password: kdG6Fasxa3jp26AEhP3KzQ9kGZFnzVjP
-  host: dpg-cfqbgmsgqg41dhu1d6b0-a 
-  username: akash1 
+  database: akash_9i8t
+  password: iJV0QegmPFyFNp0CUJuaIFHXvy3NeJjo
+  host: dpg-cfqcfrpgp3jo0b71q4qg-a 
+  username: akash 
   port: 5432
