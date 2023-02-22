@@ -9,19 +9,19 @@ ActiveAdmin.register FeatureService do
   form html: { multipart: true } do |f|
     f.inputs "Publication" do
       f.input :title
-      f.input :description, as: :quill_editor
+      f.input :description
       f.input :title1
-      f.input :description1, as: :quill_editor
+      f.input :description1
       f.input :title2
-      f.input :description2, as: :quill_editor
+      f.input :description2
       f.input :title3
-      f.input :description3, as: :quill_editor
+      f.input :description3
       f.input :title4
-      f.input :description4, as: :quill_editor
+      f.input :description4
       f.input :title5
-      f.input :description5, as: :quill_editor
+      f.input :description5
       f.input :title6
-      f.input :description6, as: :quill_editor
+      f.input :description6
       # f.input :published
       f.input :images, as: :file, input_html: { multiple: true }
     end

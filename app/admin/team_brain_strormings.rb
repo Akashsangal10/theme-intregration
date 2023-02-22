@@ -25,7 +25,7 @@ ActiveAdmin.register TeamBrainStrorming do
   form do |f|
     f.inputs do
       f.input :title
-      f.input :description, as: :quill_editor
+      f.input :description
       f.input :image, as: :file
     end
     f.actions

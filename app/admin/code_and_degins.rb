@@ -7,7 +7,7 @@ ActiveAdmin.register CodeAndDegin do
     selectable_column
     id_column
     column :title
-    column :describtion, as: :quill_editor
+    column :describtion
     column :created_at
     column :updated_at
     actions
