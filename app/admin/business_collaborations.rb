@@ -1,10 +1,12 @@
 ActiveAdmin.register BusinessCollaboration do
 
  
-  permit_params :title, :description, :image, :image1, :image2
+  permit_params :title, :description, :image, :image1, :image2, :title1, :description1
 
   form  do |f|
     f.inputs "BusinessCollaboration" do
+      f.input :title1
+      f.input :description1
       f.input :title
       f.input :description
       # f.input :published
@@ -21,6 +23,8 @@ show do
     attributes_table do
       row :title
       row :description
+      row :titile1
+      row :description1
       row :image do |ad|
         image_tag url_for(ad.image)
       end
@@ -38,6 +42,8 @@ show do
     id_column
     column :title
     column :description
+    column :titile1
+    column :description1
     column :image do |obj|
       image_tag (url_for(obj.image) rescue "")
     end 
