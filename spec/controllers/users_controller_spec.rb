@@ -4,13 +4,13 @@ RSpec.describe UsersController do
   
 
 
-  #  describe 'Get index' do
-  #     it 'index' do
-  #       get :index 
+    describe 'Get index' do
+       it 'index' do
+         get :index 
   #       # expect(response).to render_template "users/index"
-  #       expect(rendered).to have_content("root_path")
-  #     end
-  # end
+        expect(response).to have_http_status :ok
+       end
+   end
 
   #  describe 'services' do
   #     it 'user services' do
@@ -18,6 +18,22 @@ RSpec.describe UsersController do
   #       expect(response).to have_http_status 200
   #     end
   # end
+
+  # describe '#services' do
+  #   context 'services' do
+  #     it 'should return services' do
+  #       get "/users/services"
+  #       expect(response).to have_http_status :ok
+  #     end
+  #     it 'should not return health story' do
+  #       get "/bx_block_posts/show_stories"
+  #       expect(response).to have_http_status :not_found
+  #     end
+  #   end
+  # end
+
+
+
 
   # describe 'about' do
   #     it 'about' do
