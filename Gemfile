@@ -58,6 +58,9 @@ group :development, :test do
   gem 'rack-livereload'
   gem 'dotenv-rails'
   gem 'figaro'
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
 end
 
 group :development do

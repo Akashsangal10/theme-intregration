@@ -13,5 +13,17 @@ FactoryBot.define do
     description5 { "MyString" }
     title5 { "MyString" }
     description6 { "MyString" }
+    logo { Rack::Test::UploadedFile.new(Rails.root.join('spec', 'fixtures', 'myfiles', 'bmw.jpeg'), 'image/jpeg') }
   end
 end
+
+
+
+
+# include ActionDispatch::TestProcess
+# FactoryBot.define do
+#   factory :company, class: 'BxBlockAdmin::Company' do
+#     name { 'xyz' }
+#     logo { Rack::Test::UploadedFile.new(Rails.root.join('spec', 'fixtures', 'myfiles', 'bmw.jpeg'), 'image/jpeg') }
+#   end
+# end

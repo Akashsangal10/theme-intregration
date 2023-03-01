@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
 	
 	def index
-		@business_and_digitalmarketing = BusinessAndDigitalmarketing.all
+		# debugger
+		# @business_and_digitalmarketing = BusinessAndDigitalmarketing.all
+
 	end
 
 
@@ -19,9 +21,9 @@ class UsersController < ApplicationController
 
 	end
 
-	def services
+	# def services
 
-	end
+	# end
 
 	def contact_info
 		@inquiry = Inquiry.create(name:params[:name], email:params[:email], message:params[:message])
