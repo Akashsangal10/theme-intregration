@@ -42,16 +42,16 @@ ActiveAdmin.register AboutCompany do
       row :title6 
       row :description7
       row :image1 do |ad|
-        image_tag url_for(ad.image1)
+        # image_tag url_for(ad.image1)
       end
       row :image2 do |ad|
-        image_tag url_for(ad.image2)
+        # image_tag url_for(ad.image2)
       end
       row :image3 do |ad|
-        image_tag url_for(ad.image3)
+        # image_tag url_for(ad.image3)
       end
       row :image4 do |ad|
-        image_tag url_for(ad.image4)
+        # image_tag url_for(ad.image4)
       end
     end
   end
@@ -73,16 +73,16 @@ ActiveAdmin.register AboutCompany do
     column :title6 
     column :description7
     column :image1 do |obj|
-      image_tag (url_for(obj.image1) rescue "")
+      # image_tag (url_for(obj.image1) rescue "")
     end
     column :image2 do |obj|
-      image_tag (url_for(obj.image2) rescue "")
+      # image_tag (url_for(obj.image2) rescue "")
     end
     column :image3 do |obj|
-      image_tag (url_for(obj.image3) rescue "")
+      # image_tag (url_for(obj.image3) rescue "")
     end
     column :image4 do |obj|
-      image_tag (url_for(obj.image4) rescue "")
+      # image_tag (url_for(obj.image4) rescue "")
     end
     f.actions
   end

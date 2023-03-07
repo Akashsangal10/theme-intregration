@@ -16,12 +16,12 @@ ActiveAdmin.register ServiceContent do
     column :title2
     column :describtion2
     column :image2 do |obj|
-      image_tag url_for(obj.image2)
+      # image_tag url_for(obj.image2)
     end
     column :title3
     column :describtion3
     column :image3 do |obj|
-      image_tag url_for(obj.image3)
+      # image_tag url_for(obj.image3)
     end
     column :created_at
     column :updated_at

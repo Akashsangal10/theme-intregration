@@ -1,6 +1,6 @@
 ActiveAdmin.register NewBusiness do
 
-  permit_params :title, :description, :description1, :title1, :title2, :title3, :image1
+  permit_params :title, :description, :description1, :title1, :title2, :title3, :image1, :description2, :description3, :description4
 
   index do
     selectable_column
@@ -8,6 +8,9 @@ ActiveAdmin.register NewBusiness do
     column :title
     column :description
     column :describtion1
+    column :description2
+    column :description3
+    column :description4
     column :title1
     column :title2
     column :title3
@@ -33,6 +36,9 @@ ActiveAdmin.register NewBusiness do
       f.input :image1, as: :file
       f.input :title2
       f.input :title3
+      f.input :description2
+      f.input :description3
+      f.input :description4
     end
     f.actions
   end
@@ -48,6 +54,9 @@ ActiveAdmin.register NewBusiness do
       row :title1
       row :title2
       row :title3
+      row :description2
+      row :description3
+      row :description4
     end
   end 
 end

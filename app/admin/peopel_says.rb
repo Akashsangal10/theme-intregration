@@ -67,7 +67,7 @@ ActiveAdmin.register PeopelSay do
         image_tag url_for(obj.image2)
       end
       row :image3 do |obj|
-        image_tag url_for(obj.image3)
+        # image_tag url_for(obj.image3)
       end
       row :image4 do |obj|
         image_tag url_for(obj.image4)

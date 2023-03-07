@@ -1828,15 +1828,15 @@ Services </p>
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-3008df4 elementor-invisible elementor-widget elementor-widget-heading" data-id="3008df4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
 <div class="elementor-widget-container">
-<h6 class="elementor-heading-title elementor-size-default">Why Choose Us</h6> </div>
+<h6 class="elementor-heading-title elementor-size-default"><%= NewBusiness.last.title %></h6> </div>
 </div>
 <div class="elementor-element elementor-element-22b71d4 elementor-invisible elementor-widget elementor-widget-heading" data-id="22b71d4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="heading.default">
 <div class="elementor-widget-container">
-<h3 class="elementor-heading-title elementor-size-default">Generating new business growth plans</h3> </div>
+<h3 class="elementor-heading-title elementor-size-default"><%= NewBusiness.last.description %></h3> </div>
 </div>
 <div class="elementor-element elementor-element-3912845 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="3912845" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="text-editor.default">
 <div class="elementor-widget-container">
-Nulla eleifend, lectus eu gravida facilisis, ipsum metus faucibus eros, vitae vulputate nibh libero ac metus phasellus magna erat </div>
+<%= NewBusiness.last.description1 %> </div>
 </div>
 <section class="elementor-section elementor-inner-section elementor-element elementor-element-23711e7 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="23711e7" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:800}">
 <div class="elementor-container elementor-column-gap-default">
@@ -1845,36 +1845,38 @@ Nulla eleifend, lectus eu gravida facilisis, ipsum metus faucibus eros, vitae vu
 <div class="elementor-element elementor-element-4b80bc7 elementor-widget elementor-widget-radiant-progressbar" data-id="4b80bc7" data-element_type="widget" data-widget_type="radiant-progressbar.default">
 <div class="elementor-widget-container">
 <div class="rt-progressbar-container" data-settings="{&quot;progress_length&quot;:&quot;65%&quot;,&quot;speed&quot;:1000}">
-<p class="rt-progressbar-left-label"><span>Business Goal</span></p>
-<p class="rt-progressbar-right-label"><span>65%</span></p>
+ <h3 class="rt-progressbar-left-label"><span> 1 <%= NewBusiness.last.title1 %></span></h3>
+ <p class="rt-progressbar-left-label"><span><%= NewBusiness.last.description2 %></span></p>
+<!-- <p class="rt-progressbar-right-label"><span>65%</span></p> -->
 <div class="clearfix"></div>
-<div class="rt-progressbar-bar-wrap">
+<!-- <div class="rt-progressbar-bar-wrap">
 <div class="rt-progressbar-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
+</div> -->
 </div>
 </div>
 </div>
 <div class="elementor-element elementor-element-8a0dcb2 elementor-widget elementor-widget-radiant-progressbar" data-id="8a0dcb2" data-element_type="widget" data-widget_type="radiant-progressbar.default">
 <div class="elementor-widget-container">
-<div class="rt-progressbar-container" data-settings="{&quot;progress_length&quot;:&quot;90%&quot;,&quot;speed&quot;:1000}">
-<p class="rt-progressbar-left-label"><span>Traffic Growth</span></p>
-<p class="rt-progressbar-right-label"><span>90%</span></p>
+<div class="rt-progressbar-container" data-settings="{&quot;progress_length&quot;:&quot;90%&quot;,&quot;speed&quot;:1000}"><br>
+<h3 class="rt-progressbar-left-label"><span>2 <%= NewBusiness.last.title2 %></span></h3>
+<p class="rt-progressbar-left-label"><span><%= NewBusiness.last.description3 %></span></p>
+<p class="rt-progressbar-right-label"><span></span></p>
 <div class="clearfix"></div>
-<div class="rt-progressbar-bar-wrap">
+<!-- <div class="rt-progressbar-bar-wrap">
 <div class="rt-progressbar-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
+</div> -->
 </div>
 </div>
 </div>
 <div class="elementor-element elementor-element-e673624 elementor-widget elementor-widget-radiant-progressbar" data-id="e673624" data-element_type="widget" data-widget_type="radiant-progressbar.default">
 <div class="elementor-widget-container">
 <div class="rt-progressbar-container" data-settings="{&quot;progress_length&quot;:&quot;75%&quot;,&quot;speed&quot;:1000}">
-<p class="rt-progressbar-left-label"><span>Competitor Research</span></p>
-<p class="rt-progressbar-right-label"><span>75%</span></p>
+<h3 class="rt-progressbar-left-label"><span>3 <%= NewBusiness.last.title3 %></span></h3>
+<p class="rt-progressbar-right-label"><span><%= NewBusiness.last.description4 %></span></p>
 <div class="clearfix"></div>
-<div class="rt-progressbar-bar-wrap">
+<!-- <div class="rt-progressbar-bar-wrap">
 <div class="rt-progressbar-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
+</div> -->
 </div>
 </div>
 </div>
@@ -1902,110 +1904,41 @@ Nulla eleifend, lectus eu gravida facilisis, ipsum metus faucibus eros, vitae vu
 </div>
 </div>
 </section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-69fd35d elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="69fd35d" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-69fd35d elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="69fd35d" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
 <div class="elementor-container elementor-column-gap-default">
 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b88ff9d" data-id="b88ff9d" data-element_type="column">
 <div class="elementor-widget-wrap elementor-element-populated">
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-1c22f36 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1c22f36" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f871845" data-id="f871845" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-c469298 rt-particle-moving-2 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="c469298" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img decoding="async" src="https://softek.radiantthemes.com/wp-content/uploads/revslider/softek-1/elp02.png" title="" alt="" /> </div>
+
+
+
+
 </div>
 </div>
 </div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-89025ad" data-id="89025ad" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-e052d12 elementor-invisible elementor-widget elementor-widget-heading" data-id="e052d12" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h6 class="elementor-heading-title elementor-size-default">Service Testimonials</h6> </div>
+</section> -->
+<!-- =================================================== -->
+
+<div class="row mt-5 mb-5">
+  <h3 class="pl-3">Our Tech Stack</h3>
+  <div class="col-lg-4 pl-5">
+    <h6 >Mobile development</h6>
+    <img alt="Assets" src="/assets/React_Native.svg">
+  </div>
+
+  <div class="col-lg-4">
+    <h6>Web development</h6>
+    <img alt="Assets" src="/assets/Firebase.svg">
+  </div>
+
+  <div class="col-lg-4">
+    <h6>UX/UI Design</h6>
+    <img alt="Assets" src="/assets/test-flight.svg">
+  </div>
+
 </div>
-<div class="elementor-element elementor-element-beb1d7a elementor-invisible elementor-widget elementor-widget-heading" data-id="beb1d7a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h3 class="elementor-heading-title elementor-size-default">What people say about us</h3> </div>
-</div>
-<div class="elementor-element elementor-element-41eb783 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="41eb783" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:60}" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Maecenas varius sem dui. Vestibulum semper ante a viverra posuere. Maecenas eleifend fermentum eros, et tristique eros.</p> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-67ac0d3" data-id="67ac0d3" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-bd24731 rt-particle-moving-2 elementor-widget__width-inherit elementor-absolute elementor-widget elementor-widget-image" data-id="bd24731" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img decoding="async" src="/assets/Ban06.png" title="" alt="" /> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-89115cb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="89115cb" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-34a9962" data-id="34a9962" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6a7dee6 elementor-invisible elementor-widget elementor-widget-image" data-id="6a7dee6" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:850}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<%= image_tag(PeopelSay.last.image1, style:"hight:100%")%></div>
-</div>
-<div class="elementor-element elementor-element-fabbf51 rt-particle-moving-2 elementor-widget__width-initial elementor-absolute elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image" data-id="fabbf51" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img decoding="async" src="/assets/el03.png" title="" alt="" /> </div>
-</div>
-<div class="elementor-element elementor-element-f1892c1 elementor-widget__width-initial elementor-absolute elementor-hidden-phone elementor-hidden-tablet elementor-invisible elementor-widget elementor-widget-image" data-id="f1892c1" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:1150}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<%= image_tag(PeopelSay.last.image2, style:"hight:100%")%></div>
-</div>
-<div class="elementor-element elementor-element-c141f96 elementor-widget__width-initial elementor-absolute elementor-hidden-phone elementor-invisible elementor-widget elementor-widget-image" data-id="c141f96" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:1000}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<%= image_tag(PeopelSay.last.image3, style:"hight:100%")%> </div>
-</div>
-<div class="elementor-element elementor-element-d394f5c rt-particle-moving-2 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="d394f5c" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img decoding="async" src="https://softek.radiantthemes.com/wp-content/uploads/revslider/slider-31/sftk-ply01.png" title="" alt="" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2aed963" data-id="2aed963" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-ba0ce93 elementor-invisible elementor-widget elementor-widget-radiant-testimonial" data-id="ba0ce93" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:800}" data-widget_type="radiant-testimonial.default">
-<div class="elementor-widget-container">
-<div class="testimonial rt-testimonial element-one swiper-container " data-mobile-items="1" data-tab-items="1" data-desktop-items="1" data-spacer="30"><div class="swiper-wrapper"><div class="holder swiper-slide"><div class="testimonial-pic"><div class="testimonial-pic-holder"><div class="testimonial-pic-main" style="background-image:url(/assets/testi-lady-7.png);"></div><div class="testimonial-pic-icon"><i class="fa fa-quote-left"></i></div></div></div><div class="testimonial-data"><blockquote><p>"Praesent eget metus pulvinar, eleifend dolor sed, tempus nibh. Lorem ipsum dolor sit amet Fusce vel scelerisque erat facilisis. Donec hendrerit diam sapien, vel scelerisque erat facilisis ut. Fusce sit amet leo ac eros dignissim porta in vel metus."</p></blockquote></div><div class="testimonial-title"><h4 class="title">Anie Gomez</h4><p class="designation">Web Developer</p></div></div><div class="holder swiper-slide"><div class="testimonial-pic"><div class="testimonial-pic-holder"><div class="testimonial-pic-main" style="background-image:url(https://softek.radiantthemes.com/wp-content/uploads/2020/09/test-1-7.png);"></div><div class="testimonial-pic-icon"><i class="fa fa-quote-left"></i></div></div></div><div class="testimonial-data"><blockquote><p>"Morbi molestie blandit libero et tempus.Praesent eget metus pulvinar, eleifend dolor sed, tempus nibh. Lorem ipsum dolor sit amet Fusce vel scelerisque erat facilisis. Donec hendrerit diam sapien, vel scelerisque erat facilisis lorem ipsum dolor sit amet Fusce."</p></blockquote></div><div class="testimonial-title"><h4 class="title">Julia Miller</h4><p class="designation">Web Designer</p></div></div><div class="holder swiper-slide"><div class="testimonial-pic"><div class="testimonial-pic-holder"><div class="testimonial-pic-main" style="background-image:url(https://softek.radiantthemes.com/wp-content/uploads/2020/09/testimonials-7.png);"></div><div class="testimonial-pic-icon"><i class="fa fa-quote-left"></i></div></div></div><div class="testimonial-data"><blockquote><p>"Fusce at nisi sed sapien volutpat malesuada. All the Lorem Ipsum genchunks as dolor sit amet consectetur lorem ipsum dolor sit amet Fusce at nisi sed sapien volutpat malesuada. Lorem ipsum dolor sit amet Fusce vel scelerisque erat facilisis."</p></blockquote></div><div class="testimonial-title"><h4 class="title">Anie Gomez</h4><p class="designation">Graphic Designer</p></div></div></div><div class="swiper-pagination"></div></div> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-aa6b446" data-id="aa6b446" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-087e11c elementor-invisible elementor-widget elementor-widget-image" data-id="087e11c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:1050}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<%= image_tag(PeopelSay.last.image5, style:"hight:100%")%> </div>
-</div>
-<div class="elementor-element elementor-element-2a62258 elementor-widget__width-initial elementor-absolute elementor-hidden-phone elementor-hidden-tablet elementor-invisible elementor-widget elementor-widget-image" data-id="2a62258" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:1100}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<%= image_tag(PeopelSay.last.image6, style:"hight:100%")%></div>
-</div>
-<div class="elementor-element elementor-element-4c82d33 elementor-widget__width-initial elementor-absolute elementor-hidden-phone elementor-invisible elementor-widget elementor-widget-image" data-id="4c82d33" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:900}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<%= image_tag(PeopelSay.last.image4, style:"hight:100%") %></div>
-</div>
-<div class="elementor-element elementor-element-7fcbead particle-moving-1 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="7fcbead" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img decoding="async" width="26" height="26" src="/assets/P-06-7.png" class="attachment-full size-full" alt="circle2" loading="lazy" /> </div>
-</div>
-<div class="elementor-element elementor-element-fa245ef rt-particle-moving-2 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="fa245ef" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img decoding="async" src="https://softek.radiantthemes.com/wp-content/uploads/revslider/softek-1/P-03.png" title="" alt="" /> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</div>
-</section>
+
+
+<!-- ========================================================= -->
 </div>
 </div>
 </div>

@@ -29,7 +29,7 @@ ActiveAdmin.register AnyQuery do
       row :title3
       row :description3
       row :image1 do |ad|
-        image_tag url_for(ad.image1)
+        # image_tag url_for(ad.image1)
       end
     end
   end
@@ -46,7 +46,7 @@ ActiveAdmin.register AnyQuery do
     column :title3
     column :description3
     column :image1 do |obj|
-      image_tag (url_for(obj.image1) rescue "")
+      # image_tag (url_for(obj.image1) rescue "")
     end  
     f.actions
   end

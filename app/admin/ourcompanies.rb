@@ -2,7 +2,7 @@ ActiveAdmin.register Ourcompany do
 
 
   
-  permit_params :title1, :title2, :title3, :description1, :description2, :description3, :image, :title, :title4, :describtion4, :title5, :description5
+  permit_params :title1, :title2, :title3, :description1, :description2, :description3, :image, :title, :title4, :description4, :title5, :description5
 
    form html: { multipart: true } do |f|
     f.inputs "Ourcompany" do
