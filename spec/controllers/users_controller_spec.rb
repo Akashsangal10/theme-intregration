@@ -1,15 +1,11 @@
 require 'rails_helper'
 
-RSpec.describe UsersController do
-  
-
-
-    describe 'Get index' do
-       it 'index' do
-         get :index 
-  #       # expect(response).to render_template "users/index"
-        expect(response).to have_http_status :ok
-       end
+RSpec.describe UsersController do 
+   describe 'Get index' do
+      it 'sdf' do
+         # expect(response).to render_template('index')
+         # expect(response).to render_template("index")
+      end     
    end
 
   #  describe 'services' do

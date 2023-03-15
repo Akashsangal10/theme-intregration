@@ -1626,9 +1626,9 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <li id="menu-item-35220" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-35220 rt-dropdown"><a href="<%= about_path %>" data-description="">About</a>
 
 </li>
-<li id="menu-item-36308" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-36308 rt-dropdown"><a href="<%= work_path %>" data-description="">Work</a>
+<!-- <li id="menu-item-36308" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-36308 rt-dropdown"><a href="<%#= work_path %>" data-description="">Work</a>
 
-</li>
+</li> -->
 <li id="menu-item-36814" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-36814 rt-dropdown"><a href="<%= contact_path %>" data-description="">Contact Us</a>
 <!-- <ul class="sub-menu rt-dropdown-menu menu-odd  menu-depth-1">
 <li id="menu-item-36823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36823"><a href="https://softek.radiantthemes.com/classic-boxed/" data-description="">Classic Boxed</a></li>
@@ -1733,7 +1733,7 @@ Services </p>
 </section>
 <div class="elementor-element elementor-element-6b9bc61 elementor-widget elementor-widget-radiant-timeline" data-id="6b9bc61" data-element_type="widget" data-widget_type="radiant-timeline.default">
 <div class="elementor-widget-container">
-<div class="radiantthemes-timeline element-two"><div class="elementor-repeater-item-c7d30fc radiantthemes-timeline-item"><div class="radiantthemes-timeline-item-line  "></div><div class="radiantthemes-timeline-item-dot"></div><div class='top-line-line'></div><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div class="radiantthemes-timeline-item-pic wow fadeInLeft"><%= image_tag(ServiceContent.last.image1, style:"hight:100%") %></div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-rt-box"><div class="radiantthemes-timeline-dashed-right"></div><div class="radiantthemes-timeline-item-data wow fadeInRight"> <div class="rt-circle"><span>01 </span></div><div class="rt-InRight"> <h5 class="title"><%= ServiceContent.last.title1 %></h5><div><p><%= ServiceContent.last.description1 %></p></div></div></div></div></div></div><div class="elementor-repeater-item-48bc487 radiantthemes-timeline-item"><div class="radiantthemes-timeline-item-line "></div><div class="radiantthemes-timeline-item-dot"></div><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 left-rt-box"><div class="radiantthemes-timeline-dashed-left"></div><div class="radiantthemes-timeline-item-data wow fadeInLeft"><div class="rt-circle"><span>02 </span></div><div class="rt-InRight"> <h5 class="title"><%= ServiceContent.last.title2 %></h5><div><p><%= ServiceContent.last.description2 %></p></div></div></div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div class="radiantthemes-timeline-item-pic wow fadeInRight"><%= image_tag(ServiceContent.last.image2, style:"hight:100%") %></div></div></div></div><div class="elementor-repeater-item-cc640fa radiantthemes-timeline-item"><div class="radiantthemes-timeline-item-line  "></div><div class="radiantthemes-timeline-item-dot"></div><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div class="radiantthemes-timeline-item-pic wow fadeInLeft"><%= image_tag(ServiceContent.last.image3, style:"hight:100%") %></div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-rt-box"><div class="radiantthemes-timeline-dashed-right"></div><div class="radiantthemes-timeline-item-data wow fadeInRight"> <div class="rt-circle"><span>03 </span></div><div class="rt-InRight"> <h5 class="title"><%= ServiceContent.last.title3 %></h5><div><p><%= ServiceContent.last.description3 %>
+<div class="radiantthemes-timeline element-two"><div class="elementor-repeater-item-c7d30fc radiantthemes-timeline-item"><div class="radiantthemes-timeline-item-line  "></div><div class="radiantthemes-timeline-item-dot"></div><div class='top-line-line'></div><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div class="radiantthemes-timeline-item-pic wow fadeInLeft"><%= image_tag(ServiceContent.last.image1, style:"hight:100%") %></div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-rt-box"><div class="radiantthemes-timeline-dashed-right"></div><div class="radiantthemes-timeline-item-data wow fadeInRight"> <div class="rt-circle"><span>01 </span></div><div class="rt-InRight"> <h5 class="title"><%= ServiceContent.last.title1 %></h5><div><p><%= sanitize ServiceContent.last.description1 %></p></div></div></div></div></div></div><div class="elementor-repeater-item-48bc487 radiantthemes-timeline-item"><div class="radiantthemes-timeline-item-line "></div><div class="radiantthemes-timeline-item-dot"></div><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 left-rt-box"><div class="radiantthemes-timeline-dashed-left"></div><div class="radiantthemes-timeline-item-data wow fadeInLeft"><div class="rt-circle"><span>02 </span></div><div class="rt-InRight"> <h5 class="title"><%= ServiceContent.last.title2 %></h5><div><p><%= sanitize ServiceContent.last.description2 %></p></div></div></div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div class="radiantthemes-timeline-item-pic wow fadeInRight"><%= image_tag(ServiceContent.last.image2, style:"hight:100%") %></div></div></div></div><div class="elementor-repeater-item-cc640fa radiantthemes-timeline-item"><div class="radiantthemes-timeline-item-line  "></div><div class="radiantthemes-timeline-item-dot"></div><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div class="radiantthemes-timeline-item-pic wow fadeInLeft"><%= image_tag(ServiceContent.last.image3, style:"hight:100%") %></div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-rt-box"><div class="radiantthemes-timeline-dashed-right"></div><div class="radiantthemes-timeline-item-data wow fadeInRight"> <div class="rt-circle"><span>03 </span></div><div class="rt-InRight"> <h5 class="title"><%= ServiceContent.last.title3 %></h5><div><p><%= sanitize ServiceContent.last.description3 %>
 
 </p></div></div></div></div></div></div><!-- <div class="elementor-repeater-item-13923f7 radiantthemes-timeline-item"><div class="radiantthemes-timeline-item-line "></div><div class="radiantthemes-timeline-item-dot"></div> --><!-- <div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 left-rt-box"><div class="radiantthemes-timeline-dashed-left"></div><div class="radiantthemes-timeline-item-data wow fadeInLeft"><div class="rt-circle"><span>04 </span></div><div class="rt-InRight"> <h5 class="title">accurate testing Process</h5><div><p>Generators on the Internet tend to repeat predefined chunks as necessary</p></div></div></div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div class="radiantthemes-timeline-item-pic wow fadeInRight"><img width="259" height="207" src="https://softek.radiantthemes.com/wp-content/uploads/2020/11/04-1-7.png" class="attachment-full size-full" alt="04" decoding="async" loading="lazy" /></div></div></div></div> --><!-- <div class="elementor-repeater-item-d2e13cc radiantthemes-timeline-item"><div class="radiantthemes-timeline-item-line  last-line-arrow"></div><div class="radiantthemes-timeline-item-dot"></div><div class="row"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div class="radiantthemes-timeline-item-pic wow fadeInLeft"><img width="271" height="234" src="https://softek.radiantthemes.com/wp-content/uploads/2020/11/05-1-7.png" class="attachment-full size-full" alt="05" decoding="async" loading="lazy" /></div></div><div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-rt-box"><div class="radiantthemes-timeline-dashed-right"></div><div class="radiantthemes-timeline-item-data wow fadeInRight"> <div class="rt-circle"><span>05 </span></div><div class="rt-InRight"> <h5 class="title">our successful project</h5><div><p>Generators on the Internet tend to repeat predefined chunks as necessary</p></div></div></div></div></div></div> --></div> </div>
 </div>
@@ -1832,11 +1832,11 @@ Services </p>
 </div>
 <div class="elementor-element elementor-element-22b71d4 elementor-invisible elementor-widget elementor-widget-heading" data-id="22b71d4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="heading.default">
 <div class="elementor-widget-container">
-<h3 class="elementor-heading-title elementor-size-default"><%= NewBusiness.last.description %></h3> </div>
+<h3 class="elementor-heading-title elementor-size-default"><%=  NewBusiness.last.description %></h3> </div>
 </div>
 <div class="elementor-element elementor-element-3912845 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="3912845" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="text-editor.default">
 <div class="elementor-widget-container">
-<%= NewBusiness.last.description1 %> </div>
+<%= sanitize NewBusiness.last.description1 %> </div>
 </div>
 <section class="elementor-section elementor-inner-section elementor-element elementor-element-23711e7 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="23711e7" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:800}">
 <div class="elementor-container elementor-column-gap-default">
@@ -1845,8 +1845,8 @@ Services </p>
 <div class="elementor-element elementor-element-4b80bc7 elementor-widget elementor-widget-radiant-progressbar" data-id="4b80bc7" data-element_type="widget" data-widget_type="radiant-progressbar.default">
 <div class="elementor-widget-container">
 <div class="rt-progressbar-container" data-settings="{&quot;progress_length&quot;:&quot;65%&quot;,&quot;speed&quot;:1000}">
- <h3 class="rt-progressbar-left-label"><span> 1 <%= NewBusiness.last.title1 %></span></h3>
- <p class="rt-progressbar-left-label"><span><%= NewBusiness.last.description2 %></span></p>
+ <h3 class="rt-progressbar-left-label"><span>  <%= sanitize NewBusiness.last.title1 %></span></h3>
+ <p class="rt-progressbar-left-label"><span><%= sanitize NewBusiness.last.description2 %></span></p>
 <!-- <p class="rt-progressbar-right-label"><span>65%</span></p> -->
 <div class="clearfix"></div>
 <!-- <div class="rt-progressbar-bar-wrap">
@@ -1858,8 +1858,8 @@ Services </p>
 <div class="elementor-element elementor-element-8a0dcb2 elementor-widget elementor-widget-radiant-progressbar" data-id="8a0dcb2" data-element_type="widget" data-widget_type="radiant-progressbar.default">
 <div class="elementor-widget-container">
 <div class="rt-progressbar-container" data-settings="{&quot;progress_length&quot;:&quot;90%&quot;,&quot;speed&quot;:1000}"><br>
-<h3 class="rt-progressbar-left-label"><span>2 <%= NewBusiness.last.title2 %></span></h3>
-<p class="rt-progressbar-left-label"><span><%= NewBusiness.last.description3 %></span></p>
+<h3 class="rt-progressbar-left-label"><span> <%= sanitize NewBusiness.last.title2 %></span></h3>
+<p class="rt-progressbar-left-label"><span><%= sanitize NewBusiness.last.description3 %></span></p>
 <p class="rt-progressbar-right-label"><span></span></p>
 <div class="clearfix"></div>
 <!-- <div class="rt-progressbar-bar-wrap">
@@ -1871,8 +1871,8 @@ Services </p>
 <div class="elementor-element elementor-element-e673624 elementor-widget elementor-widget-radiant-progressbar" data-id="e673624" data-element_type="widget" data-widget_type="radiant-progressbar.default">
 <div class="elementor-widget-container">
 <div class="rt-progressbar-container" data-settings="{&quot;progress_length&quot;:&quot;75%&quot;,&quot;speed&quot;:1000}">
-<h3 class="rt-progressbar-left-label"><span>3 <%= NewBusiness.last.title3 %></span></h3>
-<p class="rt-progressbar-right-label"><span><%= NewBusiness.last.description4 %></span></p>
+<h3 class="rt-progressbar-left-label"><span> <%= sanitize NewBusiness.last.title3 %></span></h3>
+<p class="rt-progressbar-right-label"><span><%= sanitize NewBusiness.last.description4 %></span></p>
 <div class="clearfix"></div>
 <!-- <div class="rt-progressbar-bar-wrap">
 <div class="rt-progressbar-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -1919,19 +1919,19 @@ Services </p>
 <!-- =================================================== -->
 
 <div class="row mt-5 mb-5">
-  <h3 class="pl-3">Our Tech Stack</h3>
+  <h3 class="pl-3"><%= OurOurTech.last.title1 %></h3>
   <div class="col-lg-4 pl-5">
-    <h6 >Mobile development</h6>
+    <h6 ><%= OurOurTech.last.title2 %></h6>
     <img alt="Assets" src="/assets/React_Native.svg">
   </div>
 
   <div class="col-lg-4">
-    <h6>Web development</h6>
+    <h6><%= OurOurTech.last.title3 %></h6>
     <img alt="Assets" src="/assets/Firebase.svg">
   </div>
 
   <div class="col-lg-4">
-    <h6>UX/UI Design</h6>
+    <h6><%= OurOurTech.last.title4 %></h6>
     <img alt="Assets" src="/assets/test-flight.svg">
   </div>
 
@@ -1961,7 +1961,7 @@ Services </p>
 </div>
 <div class="elementor-element elementor-element-53da70d elementor-widget elementor-widget-text-editor" data-id="53da70d" data-element_type="widget" data-widget_type="text-editor.default">
 <div class="elementor-widget-container">
-Lorem Ipsum is simply dummy text of the printing and typesetting </div>
+<%= Footer.last.description %> </div>
 </div>
 <div class="elementor-element elementor-element-63d0456 e-grid-align-left elementor-shape-circle elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="63d0456" data-element_type="widget" data-widget_type="social-icons.default">
 <div class="elementor-widget-container">
@@ -2036,17 +2036,17 @@ Lorem Ipsum is simply dummy text of the printing and typesetting </div>
 </ul>
 </div>
 </div>
-<div class="elementor-element elementor-element-ae823fe elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="ae823fe" data-element_type="widget" data-widget_type="icon-list.default">
+<!-- <div class="elementor-element elementor-element-ae823fe elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="ae823fe" data-element_type="widget" data-widget_type="icon-list.default">
 <div class="elementor-widget-container">
 <ul class="elementor-icon-list-items elementor-inline-items">
 <li class="elementor-icon-list-item elementor-inline-item">
-<a href="<%= work_path %>">
+<a href="<%#= work_path %>">
 <span class="elementor-icon-list-text">Work </span>
 </a>
 </li>
 </ul>
 </div>
-</div>
+</div> -->
 <div class="elementor-element elementor-element-c4959ac elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c4959ac" data-element_type="widget" data-widget_type="icon-list.default">
 <div class="elementor-widget-container">
 <ul class="elementor-icon-list-items elementor-inline-items">
@@ -2089,7 +2089,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting </div>
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-8ab5fc7 elementor-widget elementor-widget-heading" data-id="8ab5fc7" data-element_type="widget" data-widget_type="heading.default">
 <div class="elementor-widget-container">
-<div class="elementor-heading-title elementor-size-default">2021 Quill Informatiocs. All Rights Reserved.</div> </div>
+<div class="logo"><a href="<%= root_path %>"><span class="logo-rt-dark pull-left"><img src="assets/logo1.png" alt="logo" width=auto height="15" data-logoWidth=auto></span></a></div>
+                                                                                <div class="elementor-heading-title elementor-size-default pull-right pt-3">2023 Quill Informatiocs All Rights Reserved.</div>
+</div>
 </div>
 </div>
 </div>

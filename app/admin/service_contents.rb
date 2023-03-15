@@ -38,13 +38,13 @@ ActiveAdmin.register ServiceContent do
       f.input :title
       f.input :description
       f.input :title1
-      f.input :description1
+      f.input :description1, as: :quill_editor, input_html: { data: { options: { modules: { toolbar: [['bold', 'italic','underline', 'strike'],['link', 'image'], [{ 'size': ['small', false, 'large', 'huge'] }],['blockquote', 'code-block'], [{ 'color': [] }, { 'background': [] }],[{ 'font': [] }],[{ 'align': [] }],[{ 'script': 'sub'}, { 'script': 'super' }],[{ 'direction': 'rtl' }],[{ 'header': [1, 2, 3, 4, 5, 6, false] }],] }, placeholder: 'Type something...', theme: 'snow' } } }
       f.input :image1, as: :file
       f.input :title2
-      f.input :description2
+      f.input :description2, as: :quill_editor
       f.input :image2, as: :file
       f.input :title3
-      f.input :description3
+      f.input :description3, as: :quill_editor
       f.input :image3, as: :file
     end
     f.actions

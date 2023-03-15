@@ -31,14 +31,14 @@ ActiveAdmin.register NewBusiness do
     f.inputs do
       f.input :title
       f.input :description
-      f.input :title1
-      f.input :description1
+      f.input :title1, as: :quill_editor
+      f.input :description1, as: :quill_editor
       f.input :image1, as: :file
-      f.input :title2
-      f.input :title3
-      f.input :description2
-      f.input :description3
-      f.input :description4
+      f.input :title2, as: :quill_editor
+      f.input :title3, as: :quill_editor
+      f.input :description2, as: :quill_editor
+      f.input :description3, as: :quill_editor
+      f.input :description4, as: :quill_editor
     end
     f.actions
   end

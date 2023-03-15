@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 	def index
 		# debugger
 		# @business_and_digitalmarketing = BusinessAndDigitalmarketing.all
-
+		# @users = User.all
 	end
 
 
