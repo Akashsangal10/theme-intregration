@@ -6,7 +6,7 @@ ActiveAdmin.register AboutCompany do
       f.inputs do
       f.input :tite
       f.input :description
-      f.input :description1
+      f.input :description1, as: :quill_editor
       f.input :title2
       f.input :description3
       f.input :title3
