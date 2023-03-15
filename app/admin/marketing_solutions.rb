@@ -7,7 +7,7 @@ ActiveAdmin.register MarketingSolution do
    form  do |f|
     f.inputs "MarketingSolution" do
       f.input :title
-      f.input :description
+      f.input :description, as: :quill_editor
       f.input :image, as: :file
     end
     f.actions
