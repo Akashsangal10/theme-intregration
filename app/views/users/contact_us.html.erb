@@ -1523,7 +1523,9 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <span class="fa-solid fa-angle-up"></span>
 </div>
 
-<div class="radiantthemes-website-layout full-width body-inner"><header id="header" class="rt-dark rt-submenu-light"><div class="rt-header-inner"> <div data-elementor-type="section" data-elementor-id="3001" class="elementor elementor-3001" data-elementor-settings="[]">
+<div class="radiantthemes-website-layout full-width body-inner">
+<%= render "header" %>
+<!-- <header id="header" class="rt-dark rt-submenu-light"><div class="rt-header-inner"> <div data-elementor-type="section" data-elementor-id="3001" class="elementor elementor-3001" data-elementor-settings="[]">
 <div class="elementor-section-wrap">
 <section class="elementor-section elementor-top-section elementor-element elementor-element-d8c7de5 elementor-section-stretched elementor-section-full_width rt-inner-header elementor-section-height-default elementor-section-height-default" data-id="d8c7de5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
 <div class="elementor-container elementor-column-gap-default">
@@ -1546,75 +1548,25 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <div id="rt-mainMenu-trigger"> <a class="rt-lines-button x"><span class="lines"></span></a> </div>
 <div id="rt-mainMenu" class="" style="min-height: 0px;">
 <nav>
-<ul id="menu-inner-pages-menu" class="elementor-nav-menu"><li id="menu-item-52724" class="menu-item menu-item-type-post_type menu-item-object-mega_menu menu-item-52724  rt-dropdown mega-menu-item mx-4"><a href="<%= root_path %>" data-description="">Home</a><ul class="rt-dropdown-menu"><li class="mega-menu-content"> <div data-elementor-type="wp-post" data-elementor-id="52720" class="elementor elementor-52720" data-elementor-settings="[]">
+<ul id="menu-inner-pages-menu" class="elementor-nav-menu"><li id="menu-item-52724" class="menu-item menu-item-type-post_type menu-item-object-mega_menu menu-item-52724  rt-dropdown mega-menu-item mx-4"><a href="<%#= root_path %>" data-description="">Home</a><ul class="rt-dropdown-menu"><li class="mega-menu-content"> <div data-elementor-type="wp-post" data-elementor-id="52720" class="elementor elementor-52720" data-elementor-settings="[]">
 
 </div>
 </li></ul></li>
-<li id="menu-item-36307" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor  menu-item-36307 rt-dropdown mx-4"><a href="<%= services_path %>" data-description="">Services</a>
-<!-- <ul class="sub-menu rt-dropdown-menu menu-odd  menu-depth-1">
-<li id="menu-item-36651" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36651"><a href="#" data-description="">Web Development</a></li>
-<li id="menu-item-36652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36652"><a href="#" data-description="">Mobile App Development</a></li>
-<li id="menu-item-36653" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36653"><a href="#" data-description="">UI Development</a></li>
-<li id="menu-item-36654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36654"><a href="#" data-description="">User Experience(ux) Design</a></li>
-
-</ul> -->
-</li>
-<li id="menu-item-35220" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-35220 rt-dropdown mx-4"><a href="<%= about_path %>" data-description="">About</a>
+<li id="menu-item-36307" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor  menu-item-36307 rt-dropdown mx-4"><a href="<%#= services_path %>" data-description="">Services</a>
 
 </li>
-<!-- <li id="menu-item-36308" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-36308 rt-dropdown"><a href="<%#= work_path %>" data-description="">Work</a>
+<li id="menu-item-35220" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-35220 rt-dropdown mx-4"><a href="<%#= about_path %>" data-description="">About</a>
 
-</li> -->
-<li id="menu-item-36814" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36814 rt-dropdown mx-4"><a href="<%= contact_path %>" data-description="">Contact Us</a>
+</li>
+
+<li id="menu-item-36814" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36814 rt-dropdown mx-4"><a href="<%#= contact_path %>" data-description="">Contact Us</a>
 </li>
 </ul> </nav>
 </div>
-<!-- <div class="default-cart">
-<div class="rt-cart-box ">
-<div class="header-cart-bar">
-<a class="header-cart-bar-icon" href="https://softek.radiantthemes.com/cart/">
-<span class="ti-shopping-cart"></span>
-
-<span class="cart-count"></span></a>
-</div>
-<div id="cart-overlay" class="cart-block">
-<div class="hamburger-group"><div class="hamburger-minicart"><div class="minicart"><div class="widget_shopping_cart_content"></div></div></div></div> </div>
-</div>
-</div> -->
-<!-- <div class="default-search">
-<div class="rt-search-box2">
-<div class="container">
-<i class="search-btn2 ti-search"></i>
-<div id="search-overlay2" class="block2">
-<div class="container">
-<div class="search-area-grid">
-<div id='search-box2' class="col-md-10 col-10">
-<form action="https://softek.radiantthemes.com/" id="search-form" method="get" target="_top">
-<button id='search-button2' type='submit'>
-<i class="rt-search-btn2 ti-search"></i>
-</button>
-<input id="search-text" name="s" placeholder="Type your search" type="text" />
-</form>
-</div>
-<div class="col-md-2 col-2" id="close-btn2"><i class="ti-close"></i></div>
 </div>
 </div>
 </div>
 </div>
-</div>
-</div> -->
-</div>
-</div>
-</div>
-</div>
-<!-- <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c058879 elementor-hidden-tablet elementor-hidden-phone" data-id="c058879" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-b1f1d83 elementor-widget elementor-widget-radiant-custom-button" data-id="b1f1d83" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="radiant-custom-button.default">
-<div class="elementor-widget-container">
-<div class="radiantthemes-custom-button element-one hover-style-one  " data-button-direction="right" data-button-fullwidth="false"><a class="radiantthemes-custom-button-main" href="https://softek.radiantthemes.com/contact-01/" target="_blank" rel="nofollow"><div class="placeholder">Contact Us</div></a></div> </div>
-</div>
-</div>
-</div> -->
 </div>
 </section>
 </div>
@@ -1623,7 +1575,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </section>
 </div>
 </div>
-</div></header> 
+</div></header>  -->
 <div class="wraper_inner_banner" style="background-image:url('https://softek.radiantthemes.com/wp-content/uploads/2020/10/banner-8.jpg')">
 
 <div class="wraper_inner_banner_main">

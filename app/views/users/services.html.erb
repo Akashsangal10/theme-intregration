@@ -1591,7 +1591,9 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <span class="ti-angle-up"></span>
 </div> -->
 
-<div class="radiantthemes-website-layout full-width body-inner"><header id="header" class="rt-dark rt-submenu-light"><div class="rt-header-inner"> <div data-elementor-type="section" data-elementor-id="3001" class="elementor elementor-3001" data-elementor-settings="[]">
+<div class="radiantthemes-website-layout full-width body-inner">
+  <%= render "header" %>
+<!-- <header id="header" class="rt-dark rt-submenu-light"><div class="rt-header-inner"> <div data-elementor-type="section" data-elementor-id="3001" class="elementor elementor-3001" data-elementor-settings="[]">
 <div class="elementor-section-wrap">
 <section class="elementor-section elementor-top-section elementor-element elementor-element-d8c7de5 elementor-section-stretched elementor-section-full_width rt-inner-header elementor-section-height-default elementor-section-height-default" data-id="d8c7de5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
 <div class="elementor-container elementor-column-gap-default">
@@ -1603,7 +1605,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <div class="elementor-widget-wrap elementor-element-populated">
 <div class="elementor-element elementor-element-ced4112 radiantthemes-retina elementor-widget elementor-widget-radiant-custom-logo" data-id="ced4112" data-element_type="widget" data-widget_type="radiant-custom-logo.default">
 <div class="elementor-widget-container">
-<div class="logo"><a href="<%= root_path %>"><span class="logo-rt-dark"><img src="assets/logo.png" alt="logo" width="150" height="45" data-logoWidth="150"></span></a></div> </div>
+<div class="logo"><a href="<%#= root_path %>"><span class="logo-rt-dark"><img src="assets/logo.png" alt="logo" width="150" height="45" data-logoWidth="150"></span></a></div> </div>
 </div>
 </div>
 </div>
@@ -1614,28 +1616,21 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <div id="rt-mainMenu-trigger"> <a class="rt-lines-button x"><span class="lines"></span></a> </div>
 <div id="rt-mainMenu" class="" style="min-height: 0px;">
 <nav>
-<ul id="menu-inner-pages-menu" class="elementor-nav-menu"><li id="menu-item-52724" class="menu-item menu-item-type-post_type menu-item-object-mega_menu menu-item-52724  rt-dropdown mega-menu-item mx-4"><a href="<%= root_path %>" data-description="">Home</a><ul class="rt-dropdown-menu"><li class="mega-menu-content"> <div data-elementor-type="wp-post" data-elementor-id="52720" class="elementor elementor-52720" data-elementor-settings="[]">
+<ul id="menu-inner-pages-menu" class="elementor-nav-menu"><li id="menu-item-52724" class="menu-item menu-item-type-post_type menu-item-object-mega_menu menu-item-52724  rt-dropdown mega-menu-item mx-4"><a href="<%#= root_path %>" data-description="">Home</a><ul class="rt-dropdown-menu"><li class="mega-menu-content"> <div data-elementor-type="wp-post" data-elementor-id="52720" class="elementor elementor-52720" data-elementor-settings="[]">
 <div class="elementor-section-wrap">
 
 </div>
 </div>
 </li></ul></li>
-<li id="menu-item-36307" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent  menu-item-36307 rt-dropdown mx-4"><a href="<%= services_path %>" data-description="">Services</a>
+<li id="menu-item-36307" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent  menu-item-36307 rt-dropdown mx-4"><a href="<%#= services_path %>" data-description="">Services</a>
 
 </li>
-<li id="menu-item-35220" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-35220 rt-dropdown mx-4"><a href="<%= about_path %>" data-description="">About</a>
+<li id="menu-item-35220" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-35220 rt-dropdown mx-4"><a href="<%#= about_path %>" data-description="">About</a>
 
 </li>
-<!-- <li id="menu-item-36308" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-36308 rt-dropdown"><a href="<%#= work_path %>" data-description="">Work</a>
 
-</li> -->
-<li id="menu-item-36814" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-36814 rt-dropdown mx-4"><a href="<%= contact_path %>" data-description="">Contact Us</a>
-<!-- <ul class="sub-menu rt-dropdown-menu menu-odd  menu-depth-1">
-<li id="menu-item-36823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36823"><a href="https://softek.radiantthemes.com/classic-boxed/" data-description="">Classic Boxed</a></li>
-<li id="menu-item-36817" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36817"><a href="https://softek.radiantthemes.com/boxed-content/" data-description="">Boxed Content</a></li>
-<li id="menu-item-36815" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36815"><a href="https://softek.radiantthemes.com/three-columns-box/" data-description="">Three Columns Box</a></li>
-<li id="menu-item-36816" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36816"><a href="https://softek.radiantthemes.com/color-overlay-with-icon/" data-description="">Color Overlay with Icon</a></li>
-</ul> -->
+<li id="menu-item-36814" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-36814 rt-dropdown mx-4"><a href="<%#= contact_path %>" data-description="">Contact Us</a>
+
 </li>
 </ul> </nav>
 </div>
@@ -1654,7 +1649,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </section>
 </div>
 </div>
-</div></header> 
+</div></header>  -->
 <div class="wraper_inner_banner" style="background-image:url('https://softek.radiantthemes.com/wp-content/uploads/2020/10/banner-8.jpg')">
 
 <div class="wraper_inner_banner_main">
